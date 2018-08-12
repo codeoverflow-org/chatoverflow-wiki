@@ -60,8 +60,8 @@ The `getRequirements` method is used by the framework to check what your plugin 
 
 ```
 private val require = new Requirements
-  private val twitchChatInput = require.input.twitchChat("reqTwitch", "A twitch channel", false)
-  private val nameToSayHelloTo = require.parameter.string("reqHello", "Your name", false)
+private val twitchChatInput = require.input.twitchChat("reqTwitch", "A twitch channel", false)
+private val nameToSayHelloTo = require.parameter.string("reqHello", "Your name", false)
 ```
 
 This code requires reading-access to a twitch livestream chat and a parameter ("*a name to say hello to"*). Note: You can obviously not specify, which channel the user might choose - but you can be sure, that you will get a working input. This is ensured by the framework.
@@ -73,3 +73,5 @@ twitchChatInput.getValue.registerMessageHandler(msg => println(msg))
 ```
 
 Of course, you can also add own classes and infrastrucutre by now - the important steps are done, happy coding!
+
+*One last note: If your testing your plugin the first time, a full reload might be needed. Use the custom task `[Advanced] Full Reload and run ChatOverlfow` to do so. Afters this, you can configure the framework to start your plugin using the [CLI](Using-the-CLI)!*
