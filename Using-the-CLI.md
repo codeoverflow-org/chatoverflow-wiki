@@ -73,10 +73,10 @@ Here are some examples, how to use the different commands. *Important: The types
 
 ```
 addInstance -n PluginName -a PluginAuthor -i InstanceName
-addConnector -t org.codeoverflow...TwitchConnector -i skate702
-addCredentials -t org.codeoverflow...TwitchConnector -i skate702
-addCredentialsEntry -t org... -i skate702 -k oauth -v oauth:xxx
-addRequirement -i InstanceName -k ReqId -t TwitchChatInput -c skate702
+addConnector -t org.codeoverflow.chatoverflow.service.twitch.chat.TwitchChatConnector -i skate702
+addCredentials -t org.codeoverflow.chatoverflow.service.twitch.chat.TwitchChatConnector -i skate702
+addCredentialsEntry -t org.codeoverflow.chatoverflow.service.twitch.chat.TwitchChatConnector -i skate702 -k oauth -v oauth:xxx
+addRequirement -i InstanceName -k ReqId -t org.codeoverflow.chatoverflow.api.io.input.chat.TwitchChatInput -c skate702
 runPlugins -p InstanceName
 ```
 
