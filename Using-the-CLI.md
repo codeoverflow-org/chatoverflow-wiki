@@ -5,17 +5,17 @@ There are several possibilites to configure the chat overflow framework. Using t
 This messages shows up when you execute the framework with the flag `--help`:
 
 ```
-Chat Overflow
+Chat Overflow 1.0
 Usage: Chat Overflow [options]
 
   -u, --userInterface <value>
                            select the ui to launch after initialization. Possible values are: GUI, REPL.
   -p, --pluginFolder <value>
                            path to a folder with packaged plugin jar files
-  -c, --configFile <value>
-                           path to a custom config xml file
-  -d, --credentialsFile <value>
-                           path to a custom credentials xml file
+  -c, --configFolder <value>
+                           path to the folder to save configs and credentials
+  -r, --requirementPackage <value>
+                           path to the package where all requirements are defined
 
 For more information, please visit http://codeoverflow.org/
 ```
@@ -27,22 +27,24 @@ The REPL is available at every time on the console. You can use this beside the 
 These commands are available (Use the command `help` to see this message):
 
 ```
-entry:		Adds a credentials entry to a existing placeholder. RESTART REQUIRED.
-run:		Runs a plugin. Make sure to configure everything other first!
-instance:	Adds a new plugin instance. RESTART REQUIRED.
-quit:		Quits the chat overflow framework, too!
-requirement:	Adds a requirement to a already existing plugin instance. RESTART REQUIRED.
-help:		Prints all available commands.
-connector:	Adds a new connector. RESTART REQUIRED.
-exit:		Quits the chat overflow framework.
-start:		Runs a plugin. Make sure to configure everything other first!
+entry:	Adds a credentials entry to a existing placeholder.
+run:	Starts a plugin instance. Make sure to configure everything other first!
+instance:	Adds a new plugin instance.
+quit:	Quits the chat overflow framework, too!
+requirement:	Adds a requirement to a already existing plugin instance.
+help:	Prints all available commands.
+connector:	Adds a new connector.
+exit:	Quits the chat overflow framework.
+start:	Starts a plugin instance. Make sure to configure everything other first!
+save:	Saves the current state (credentials and configs) of the framework.
 credentials:	Adds a credentials placeholder for a connector.
+list:	Lists all registered plugin instances.
 ```
 
  ## Important value types
 
 There are several important infos about the repl.
-- Connector and credential types are full type strings, e.g. `org.codeoverflow.chatoverflow.service.twitch.chat.TwitchChatConnector`
+- Connector and credential types are full type strings, e.g. `org.codeoverflow.chatoverflow.requirement.service.twitch.chat.TwitchChatConnector`
 - Requirements are full type strings, e.g. `org.codeoverflow.chatoverflow.api.io.input.chat.TwitchChatInput`
 - Some credential values have special rules. E.g. oauth keys may have to start with `oauth:`
 
@@ -51,7 +53,7 @@ There are several important infos about the repl.
 You can also configure the paths of config- and credentials-files to create custom setups:
 
 ```
--c config/myconfigfile2.xml -d config/mynewcredentials
+-c customConfig/ -p customPlugins/
 ```
 
 *Please notice: Added credentials are encrypted with AES 128.*
