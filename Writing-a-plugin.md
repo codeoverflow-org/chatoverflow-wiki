@@ -44,13 +44,13 @@ The last method `createNewPluginInstance` is the interesting one: After the fram
 
 ## Implement the Plugin
 
-The last step is the creation of the plugin class, which contains your own plugin logic. Create a new class and implement the Plugin-Interface, located at `org.codeoverflow.chatoverflow.api.plugin.Plugin`. It might look like this:
+The last step is the creation of the plugin class, which contains your own plugin logic. Create a new class and implement the Plugin-Interface, located at `org.codeoverflow.chatoverflow.api.plugin.Plugin`. Alternatively, extend the `PluginImpl` and get rid of some boilerplate code. It might look like this:
 
 ```
-class MySuperCoolPlugin extends Plugin {
-  override def start(): Unit = ???
-
-  override def getRequirements: Requirements = ???
+class MySuperCoolPlugin(manager: PluginManager) extends PluginImpl(manager) {
+  override def setup(): Unit = { ... }
+  override def loop(): Unit = { ... }
+  override def shutdown(): Unit = { ... }
 }
 ```
 
@@ -64,7 +64,7 @@ private val twitchChatInput = require.input.twitchChat("reqTwitch", "A twitch ch
 private val nameToSayHelloTo = require.parameter.string("reqHello", "Your name", false)
 ```
 
-This code requires reading-access to a twitch livestream chat and a parameter ("*a name to say hello to"*). Note: You can obviously not specify, which channel the user might choose - but you can be sure, that you will get a working input. This is ensured by the framework.
+This code requires reading-access to a twitch livestream chat and a parameter ("*a name to say hello to"*). Note: You can obviously not specify, which channel the user might choose - but you can be sure, that you will get a working input. This is ensured by the framework. Please note, that the requirements element already exists, if you extend `PluginImpl`.
 
 After this, the last step ist the `start` method. And it is as easy as you might think: Just add your own logic now, using the required parameters of your Requirement object. Here is a short example: This code will simply print out all messages from a twitch chat in the console. To access the chat, your required variable is used with the `getValue` method.
 
