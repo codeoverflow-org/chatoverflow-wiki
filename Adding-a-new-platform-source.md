@@ -6,7 +6,9 @@ Thank you for help for the development of *Chat Overflow*. While plugins live in
 
 ## Add new types to the API
 
-Add all needed base types and interfaces representing input / output to the correct API package. E.g. a chat input belongs to `org.codeoverflow.chatoverflow.api.io.input.chat` and should extend `ChatInput`. 
+Add all needed base types and interfaces representing input / output to the correct API package. E.g. a chat input belongs to `org.codeoverflow.chatoverflow.api.io.input.chat` and should extend `ChatInput`.
+
+We require you to also register your new type in the corresponding requirement class located in `org.codeoverflow.chatoverflow.api.plugin.configuration`. Yes, this step could be automated by using reflection. But by providing a clean interface to the plugin developer we protect type safety.
 
 ## Add a new package and connector
 
