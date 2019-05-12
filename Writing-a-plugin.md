@@ -36,7 +36,7 @@ class MySuperCoolPlug extends Pluggable{
 
  ```
 
-**A short explanation**: The first 3 Methods `getName`, `getAuthor` and `getDescription` are simple: Just a return a String representing the meta information of your plugin. This inclucde it's name (please make sure to not name two plugins develeoped by yourself the same), your name or pseudonym and a brief description of the plugins purpose.
+**A short explanation**: The first 3 Methods `getName`, `getAuthor` and `getDescription` are simple: Just a return a String representing the meta information of your plugin. This inclucde it's name (please make sure to not name two plugins develeoped by yourself the same), your name or pseudonym and a brief topic of the plugins purpose.
 
 The next two methods return the number of the API-Version, you developed the plugin with. These are evaluated in the loading process to ensure that your plugin works with the framework version from the user. You can get these numbers from `org.codeoverflow.chatoverflow.api.APIVersion`.
 
