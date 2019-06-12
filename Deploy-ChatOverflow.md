@@ -1,3 +1,5 @@
+# Deprecated, will be updated soonTM
+
 To deploy Chat Overflow and create runnable jar files, follow these steps:
 
 1. Execute `sbt dependencyList` to get a dependency list of the current framework version on the console
