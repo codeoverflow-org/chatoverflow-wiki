@@ -20,17 +20,18 @@ Use the lists `requiredCredentialKeys` and `optionalCredentialKeys` to set what 
 Implement the code that sets up the connection in the `start()` method and the code that closes the connection on shutdown in `stop()`.  
 For logging use the logger provided by the `WithLogger` trait.  
 A very basic example is the `org.codeoverflow.chatoverflow.requirement.service.sample.SampleConnector`.
+Just use the helper impl classes `InputImpl` and `OutputImpl`
 
 With this connector, you can now implement the interfaces you just added to the API. E.g.
 
 ```
 @Impl(impl = classOf[SampleInput], connector = classOf[SampleConnector])
-class SampleInputImpl extends Connection[SampleConnector] with SampleInput with WithLogger {
-// ...
+class SampleInputImpl extends InputImpl[SampleConnector] with SampleInput with WithLogger {
 
+  override def start(): Boolean = ...
+
+  override def stop(): Boolean = ...
 }
 ```
 
 **Important:** The @Impl-annotation will guide the framework to load your new connector and types.
-
-Just make sure to implement all methods provided by the interface and abstract classes and that you init the sourceConnector in the `init()` method. 
