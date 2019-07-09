@@ -2,16 +2,17 @@ This tutorial shows how to install the chat overflow framework. By now, working 
 
 ### Pro
 
-1. Clone the main repository. Then clone the api into folder `codeoverflow/api` and public plugins repository into `codeoverflow/plugins-public`.
+1. Clone the main repository. Then clone the api into folder `codeoverflow/api`, the gui into folder `codeoverflow/gui` and public plugins repository into `codeoverflow/plugins-public`.
 2. Setup the main repository as imported scala project, e.g. using IntelliJ. Make sure to refresh all sbt content and load the custom run configurations.
 3. You're done. Happy coding!
 
 ### Not so Pro
 
-1. Download and install [git](https://git-scm.com/) (obviously). Make sure that you can run it using the console.
-2. Clone the main repository using `git clone https://github.com/codeoverflow-org/chatoverflow.git`.
-3. Navigate to the created chatoverflow-folder, e.g. using `cd chatoverflow`.
-4. Clone the [api repository](https://github.com/codeoverflow-org/chatoverflow-api) into a folder named "api". using `git clone https://github.com/codeoverflow-org/chatoverflow-api.git api`.
+0. Download and install [git](https://git-scm.com/) (obviously). Make sure that you can run it using the console.
+1. Clone the main repository using `git clone https://github.com/codeoverflow-org/chatoverflow.git`.
+2. Navigate to the created chatoverflow-folder, e.g. using `cd chatoverflow`.
+3. Clone the [api repository](https://github.com/codeoverflow-org/chatoverflow-api) into a folder named "api". using `git clone https://github.com/codeoverflow-org/chatoverflow-api.git api`.
+4. Clone the [gui repository](https://github.com/codeoverflow-org/chatoverflow-gui) into a folder named "gui". using `git clone https://github.com/codeoverflow-org/chatoverflow-gui.git gui`.
 5. Clone the [public plugins repository](https://github.com/codeoverflow-org/chatoverflow-plugins) into a folder named "plugins-public" using `git clone https://github.com/codeoverflow-org/chatoverflow-plugins.git plugins-public`.
 
     Site note: You can name the folders whatever you want. But if you do so, update the names in the main [build-file](https://github.com/codeoverflow-org/chatoverflow/blob/42b9469fe489fe5efeb4aa70f278e3558fccab7d/build.sbt#L64).
