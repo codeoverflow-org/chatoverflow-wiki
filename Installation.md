@@ -8,7 +8,7 @@ This tutorial shows how to install the chat overflow framework. By now, working 
 
 ### Not so Pro
 
-0. Download and install [git](https://git-scm.com/) (obviously). Make sure that you can run it using the console.
+0. Download and install [git](https://git-scm.com/) (obviously) and [Node.js](https://nodejs.org/en/download/). Make sure that you can run it using the console.
 1. Clone the main repository using `git clone https://github.com/codeoverflow-org/chatoverflow.git`.
 2. Navigate to the created chatoverflow-folder, e.g. using `cd chatoverflow`.
 3. Clone the [api repository](https://github.com/codeoverflow-org/chatoverflow-api) into a folder named "api". using `git clone https://github.com/codeoverflow-org/chatoverflow-api.git api`.
