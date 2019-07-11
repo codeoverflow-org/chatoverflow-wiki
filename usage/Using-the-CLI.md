@@ -1,4 +1,4 @@
-Chat overflow may be configured using the CLI. While running, the easiest way to control everything is the **GUI**, accessible through `http://localhost:2400`.
+Chat overflow may be configured using the CLI. While running, the easiest way to control everything is the [**Better REPL**](Using-the-GUI.md), accessible through `http://localhost:2400`.
 
 ## Command Line Interface
 
@@ -41,9 +41,3 @@ Useful is the combination of login and startup plugins for rapid prototyping.
 ```
 
 By default, plugin output on console is disable. But you can still enable it with the flag `-o`.
-
-## GUI
-
-The GUI is still in development. The **Better REPL** is an easy-to-use one-page dashboard, where everything can be controlled.
-
-*Please note: Added credentials are encrypted with AES 128/256.*

@@ -8,8 +8,15 @@ For more information about the chat overflow project, please visit [codeoverflow
 **Usage:**  
 1. [Installation](usage/Installation.md)  
 2. [Using the CLI](usage/Using-the-CLI.md)  
-3. [Frequent Issues](usage/Frequent-Issues.md)  
-    1. [Run Configuration Bug](usage/Frequent-Issues#Run-Configuration-Bug.md)  
+3. [Using the GUI](Using-the-GUI.md)  
+    1. [Starting the Better REPL](Using-the-GUI.md#Starting-the-Better-REPL)  
+    2. [Creating a plugin instance](Using-the-GUI.md#Creating-a-plugin-instance)  
+    3. [Setting plugin requirements](Using-the-GUI.md#Setting-plugin-requirements)  
+    4. [Adding connectors](Using-the-GUI.md#Adding-connectors)  
+    5. [Set credentials](Using-the-GUI.md#Set-credentials)  
+4. [Frequent Issues](Frequent-Issues.md)  
+    1. [Run Configuration Bug](usage/Frequent-Issues.md#Run-Configuration-Bug)  
+    2. [Credentials value encrypted with wrong auth key](Frequent-Issues.md#Credentials-value-encrypted-with-wrong-auth-key)  
 
 **Development:**  
 1. [Writing a plugin](development/Writing-a-plugin.md)  
