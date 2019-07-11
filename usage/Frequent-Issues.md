@@ -1,1 +1,2 @@
+## Run Configuration Bug 
 Due to IntelliJ version differences and usage on Windows vs. Mac OS, the run configurations show problems, sometimes. Change the *classpath or module* under `Edit configurations...` back to the Chat Overflow root module, and everything should be fine.
