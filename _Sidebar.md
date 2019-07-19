@@ -18,3 +18,4 @@
 2. [Adding a new platform source](Adding-a-new-platform-source)  
 3. [Deploy ChatOverflow](Deploy-ChatOverflow)
 4. [Structure](Structure)
+5. [Pluggable migration guide](Pluggable-migration-guide)
