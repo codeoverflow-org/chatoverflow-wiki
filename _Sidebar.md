@@ -18,3 +18,6 @@
 2. [Adding a new platform source](development/Adding-a-new-platform-source.md)  
 3. [Deploy ChatOverflow](development/Deploy-ChatOverflow.md)
 4. [Structure](development/Structure.md)
+
+**Services:**
+1. [Twitch Chat](services/Twitch-Chat.md)

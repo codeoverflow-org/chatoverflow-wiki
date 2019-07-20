@@ -24,6 +24,9 @@ For more information about the chat overflow project, please visit [codeoverflow
 3. [Deploy ChatOverflow](development/Deploy-ChatOverflow.md)
 4. [Structure](development/Structure.md)
 
+**Services:**
+1. [Twitch Chat](services/Twitch-Chat.md)
+
 ## Contributing
 
 You have an idea how the wiki could be improved or just found some typos/spelling mistakes?  
@@ -33,6 +36,7 @@ Everybody can easily contribute to the wiki:
 2. Click on the ✎ icon in the upper right corner
 3. Edit the page 
 4. Enter a message that describes your change and click on `Propose file change`.
+6. Click on `Compare & Pull Request` to suggest the change. Add a fitting title and submit the PR.  
 5. We'll review the change and merge it if it fits.
 
 If you are experienced with git you can of course also fork this repo, do commits and create a pull request.
