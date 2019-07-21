@@ -6,7 +6,7 @@ react on new / edited / deleted messages and reactions.
 You can also send messages, files or even [fancy embeds](https://www.discord.club/static/home/img/embedg.png).  
 
 > ### Quick note: 
-> It's clever to use discord in the developer mode, so that you can easily copy the id of a server/channel/> user.  
+> It's clever to use discord in the developer mode, so that you can easily copy the id of a server/channel/user.  
 > To activate the developer mode go to `User Settings > Appearance > Advanced`
 >
 > ![](/img/services/discord-developer-mode.png)
@@ -59,7 +59,7 @@ import org.codeoverflow.chatoverflow.api.io.event.chat.discord.DiscordReaction;
 import org.codeoverflow.chatoverflow.api.io.dto.chat.discord.DiscordChatMessage;
 
 public class TestPlugin extends PluginImpl {
-    //require a new twitch chat input
+    //require a new discord chat input
     private Requirement<DiscordChatInput> twitchIn = 
         require.input.discordChat("discordChat", "The discord chat", false);
     
@@ -163,7 +163,7 @@ import org.codeoverflow.chatoverflow.api.plugin.PluginImpl;
 import org.codeoverflow.chatoverflow.api.plugin.PluginManager;
 
 public class TestPlugin extends PluginImpl {
-    //require a new twitch chat output
+    //require a new discord chat output
     private Requirement<DiscordChatOutput> discordOut = 
         require.output.discordChat("discordChat", "The discord chat", false);
     
