@@ -2,7 +2,7 @@
 Due to IntelliJ version differences and usage on Windows vs. Mac OS, the run configurations show problems, sometimes. Change the *classpath or module* under `Edit configurations...` back to the Chat Overflow root module, and everything should be fine.
 
 ## Credentials value encrypted with wrong auth key
-![](/img/value-encrypted-wrong-key.png)  
+![](/img/usage/value-encrypted-wrong-key.png)  
 ```
 ERROR configuration.CryptoUtil$  - Your environment does not work with AES256.Please update your java runtime version to at least: 1.8.0_161
 ```

@@ -15,6 +15,7 @@ echo "Fixing named links..."
 find . -type f -name "*.md" -exec sed -i 's:\[\([^\n]\+\)\](\([^ \n]\+/\)*\([^ \n/]\+\)\.md\(#[^ \n/]\+\)\?):[\1](\3\4):g' {} +
 # Strip leading backslashes from links as all markdown files will be in the root of the final wiki
 find . -type f -name "*.md" -exec sed -i 's:\[\([^\n]*\)\](/\([^ \n]\+\)):[\1](\2):g' {} +
+find . -type f -name "*.md" -exec sed -i 's:<img\([^>\n]* src *= *\)"/\([^ >\n]\+\)"\([^>\n]*\)>:<img\1"\2"\3>:g' {} +
 git add .
 
 echo "Excluding files:"

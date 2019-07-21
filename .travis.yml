@@ -6,6 +6,6 @@ branches:
     - master
 script:
   - chmod +x .synchronize-wiki.sh
-  - ./.synchronize-wiki.sh
+  - bash .synchronize-wiki.sh
 
 # This file is not included in the wiki.
