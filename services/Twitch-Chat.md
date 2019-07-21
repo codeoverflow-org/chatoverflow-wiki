@@ -1,5 +1,7 @@
-<img align="right" width="128" height="128" src="/img/services/twitch-glitch.png">  
+<p><img align="right" width="128" height="128" src="/img/services/twitch-glitch.png"></p>  
+
 The twitch chat service allows plugins to connect to a channels chat by using IRC.  
+
 They can get a List of recent messages, listen for new messages or send messages to the chat.
 
 ## Credentials
