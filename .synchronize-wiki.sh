@@ -18,3 +18,5 @@ git commit --message "Synchronized wiki (Travis build #$TRAVIS_BUILD_NUMBER)"
 
 echo "Pushing wiki..."
 git push --force wiki master
+
+# This file is not included in the wiki.

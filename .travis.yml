@@ -1,3 +1,4 @@
+language: minimal
 notifications:
   email: false
 branches:
@@ -6,3 +7,5 @@ branches:
 script:
   - chmod +x .synchronize-wiki.sh
   - ./.synchronize-wiki.sh
+
+# This file is not included in the wiki.
