@@ -26,6 +26,7 @@ For more information about the chat overflow project, please visit [codeoverflow
 
 **Services:**
 1. [Twitch Chat](services/Twitch-Chat.md)
+2. [Discord](services/Discord.md)
 
 ## Contributing
 
