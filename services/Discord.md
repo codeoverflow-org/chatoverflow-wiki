@@ -1,6 +1,8 @@
-<img align="right" width="128" height="128" src="/img/services/discord-logo.png">  
+<p><img align="right" width="128" height="128" src="/img/services/discord-logo.png"></p>
+
 The discord service allows to connect to a discord text channel to get a list of recent messages,  
 react on new / edited / deleted messages and reactions.  
+
 You can also send messages, files or even [fancy embeds](https://www.discord.club/static/home/img/embedg.png).  
 
 > ### Quick note: 
