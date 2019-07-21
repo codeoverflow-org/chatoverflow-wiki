@@ -30,7 +30,7 @@ A simple version of the `plugin.xml` file might look like this:
         <minor>0</minor>
     </api>
     <version>0.3.0</version>
-    <website>https://codeoverflow.org</website>
+    <website>http://codeoverflow.org</website>
     <sourceRepo>https://github.com/codeoverflow-org/chatoverflow-plugins</sourceRepo>
     <bugtracker>https://github.com/codeoverflow-org/chatoverflow/issues</bugtracker>
     <license>EPL-2.0</license>
