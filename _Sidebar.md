@@ -14,10 +14,11 @@
     2. [Credentials value encrypted with wrong auth key](usage/Frequent-Issues.md#Credentials-value-encrypted-with-wrong-auth-key)  
 
 **Development:**  
-1. [Writing a plugin](development/Writing-a-plugin.md)  
-2. [Adding a new platform source](development/Adding-a-new-platform-source.md)  
-3. [Deploy ChatOverflow](development/Deploy-ChatOverflow.md)
-4. [Structure](development/Structure.md)
+1. [Build Environment](development/Setting-up-the-Build-Environment.md)
+2. [Writing a plugin](development/Writing-a-plugin.md)  
+3. [Adding a new platform source](development/Adding-a-new-platform-source.md)  
+4. [Deploy ChatOverflow](development/Deploy-ChatOverflow.md)
+5. [Structure](development/Structure.md)
 
 **Services:**
 1. [Twitch Chat](services/Twitch-Chat.md)
