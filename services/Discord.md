@@ -60,7 +60,7 @@ import org.codeoverflow.chatoverflow.api.io.dto.chat.discord.DiscordChatMessage;
 
 public class TestPlugin extends PluginImpl {
     //require a new discord chat input
-    private Requirement<DiscordChatInput> twitchIn = 
+    private Requirement<DiscordChatInput> discordIn = 
         require.input.discordChat("discordChat", "The discord chat", false);
     
     public TestPlugin(PluginManager pluginManager) {
@@ -199,7 +199,7 @@ public class TestPlugin extends PluginImpl {
             .withTimestamp(OffsetDateTime.now())
             .build();
         
-        //Output the embed to the twitch chat
+        //Output the embed to the discord chat
         discordOut.get().sendChatMessage(embed);
      }
      
