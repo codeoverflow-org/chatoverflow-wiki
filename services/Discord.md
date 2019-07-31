@@ -1,7 +1,7 @@
 <p><img align="right" width="128" height="128" src="/img/services/discord-logo.png"></p>
 
-The discord service allows to connect to a discord text channel to get a list of recent messages,
-react on new / edited / deleted messages and reactions.  
+The discord service allows you to connect to a discord text channel to get a list of recent messages,
+react on new / edited / deleted messages as well as reactions.  
 
 You can also send messages, files or even [fancy embeds](https://www.discord.club/static/home/img/embedg.png).  
 
@@ -23,7 +23,7 @@ Then head over to the bot page and add a bot:
 
 ![](/img/services/discord-build-a-bot.png)
 
-Now you can retrieve the authentication token, click on copy and [add it as credentials value](/usage/Using-the-GUI.md#Set-credentials) using the GUI.
+Now you can retrieve the authentication token, click on copy and [add it as a credentials value](/usage/Using-the-GUI.md#Set-credentials) using the GUI.
 
 ![](/img/services/discord-bot-token.png)
 
