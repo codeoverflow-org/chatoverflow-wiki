@@ -34,10 +34,10 @@ You can also configure the paths of config- and credentials-files to create cust
 -c customConfigFolder -p customPluginFolder
 ```
 
-Useful is the combination of login and startup plugins for rapid prototyping.
+The combination of logging in and starting plugins with one command is very useful for rapid prototyping.
 
 ```
 -l myPassword -s startupPluginInstance1,startupPluginInstance2
 ```
 
-By default, plugin output on console is disable. But you can still enable it with the flag `-o`.
+By default the output of a plugin is disabled. You can enable it with the flag `-o`.
