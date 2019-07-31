@@ -1,6 +1,6 @@
 <p><img align="right" width="128" height="54" src="/img/services/serial-arduino-logo.png"></p>
 
-The Serial service allows to communicate with a device that is connected to your pc over a serial port.  
+The Serial service allows you to communicate with a device that is connected to your pc over a serial port.  
 
 The most common example is exchanging data with an [arduino](https://www.arduino.cc/) over USB.
 
@@ -129,7 +129,7 @@ public class TestPlugin extends PluginImpl {
 
 ### Example arduino script
 
-An simple ping-pong example script for your arduino.
+A simple ping-pong example script for your arduino.
 ```cpp
 String inputString = "";     
 boolean stringComplete = false; 
