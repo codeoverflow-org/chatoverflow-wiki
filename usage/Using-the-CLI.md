@@ -40,4 +40,4 @@ The combination of logging in and starting plugins with one command is very usef
 -l myPassword -s startupPluginInstance1,startupPluginInstance2
 ```
 
-By default the output of a plugin is disabled. You can enable it with the flag `-o`.
+By default the log output of a plugin on the console is disabled. You can enable it with the flag `-o`.
