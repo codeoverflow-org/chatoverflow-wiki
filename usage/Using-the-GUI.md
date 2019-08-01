@@ -16,7 +16,7 @@ If the login was successful the gui will display the authentication key for this
 ## Creating a plugin instance
 Before running a plugin you have to create a plugin instance.  
 All available plugins are listed under `Plugin types`.  
-Add more plugins by putting the plugin `.jar` files into the plugins folder.
+Add more plugins by putting the plugin `.jar` files into the plugins folder. If you are adding new plugins to the folder when the framework is running, you need to restart the framework in order to load the newly added plugins.
 
 ![](/img/usage/plugin-types.png)
 
