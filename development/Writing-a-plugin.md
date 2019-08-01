@@ -19,7 +19,7 @@ Next, add your first class to the source folder of the new plugin. Supported lan
 The first class should extend the Pluggable-Interface from `org.codeoverflow.chatoverflow.api.plugin.Pluggable`. When the framework starts up, your plugin will be looked through for a class implementing this interface to get an entry point to your work. A raw version might look like this:
 
  ```
-class MySuperCoolPlug extends Pluggable{
+class MySuperCoolPlug extends Pluggable {
 
   override def getName: String = ???
 
