@@ -54,7 +54,7 @@ class MySuperCoolPlugin(manager: PluginManager) extends PluginImpl(manager) {
 }
 ```
 
-Let's talk about *Requirements* first: These are used to retrieve data from the outside world and returning information to it. Basically, you can require everything from a single paramter set by the user to full access to a users livestream chat.
+Let's talk about *Requirements* first: These are used to retrieve data from the outside world and returning information to it. Basically, you can require everything from a single parameter set by the user to full access to a users livestream chat.
 
 The `getRequirements` method is used by the framework to check what your plugin needs and to ask the user to specify which services or data he wants to give to your plugin. Here is an example:
 
