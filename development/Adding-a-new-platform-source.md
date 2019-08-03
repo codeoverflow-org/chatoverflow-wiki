@@ -1,4 +1,4 @@
-Thank you for helping developing *Chat Overflow*.  
+Thank you for improving *Chat Overflow*.  
 While plugins live in their own project, source connections (e.g. to a platform like Twitch or Discord) exist in the framework itself.  
 By this measure, we can make sure that everyone profits from the same features.  
 This wiki entry tries to show you the different steps needed to implement a new connection.

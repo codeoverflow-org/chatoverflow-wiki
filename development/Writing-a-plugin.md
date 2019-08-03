@@ -8,15 +8,15 @@ There are 3 important steps when you want to create and implement a new chat ove
 
 ## Create a new plugin project
 
-Use the *Create Plugin* run configuration or start the custom task `sbt create` directly. Enter the basic plugin information in the command promt. This includes the name, version and base plugin folder (e.g. `plugins-public`). The command creates the folder structure of the new plugin and adds a basic build file. Here you can also add custom dependencies.
+Use the *Create Plugin* run configuration or start the custom task `sbt create` directly. Enter the basic plugin information in the command prompt. This includes the name, version and base plugin folder (e.g. `plugins-public`). The command creates the folder structure of the new plugin and adds a basic build file. Here you can also add custom dependencies.
 
-Next, run the custom task `sbt fetch` to let the framework look for new plugins and update the plugin reference file `plugins.sbt`. If you're using IntelliJ, you can now reload the framework by hand to register the plugin as new as well as a custom project. You should also run `sbt reload` (Yes, both actions have different effects although they shouldn't).
+Next, run the custom task `sbt fetch` to let the framework look for new plugins and update the plugin reference file `plugins.sbt`. If you're using IntelliJ, you can now reload the framework manually to register the plugin as a new custom project. You should also run `sbt reload` (Yes, both actions have different effects although they shouldn't).
 
 ## Implement the pluggable
 
 Next, add your first class to the source folder of the new plugin. Supported languages are *Scala* and *Java*, but this guide will only show the scala way - development of java plugins is very similar.
 
-The first class should extend the Pluggable-Interface from `org.codeoverflow.chatoverflow.api.plugin.Pluggable`. When the framework starts up, your plugin will be looked through for a class implementing this interface to get an entry point to your work. A raw version might look like this:
+The first class should extend the Pluggable Interface from `org.codeoverflow.chatoverflow.api.plugin.Pluggable`. When the framework starts up, it will search for a class implementing this interface in your plugin to get an entry point. A raw version might look like this:
 
  ```
 class MySuperCoolPlug extends Pluggable {
@@ -36,11 +36,11 @@ class MySuperCoolPlug extends Pluggable {
 
  ```
 
-**A short explanation**: The first 3 Methods `getName`, `getAuthor` and `getDescription` are simple: They are just returning a String representing the meta information of your plugin. This includes its name (please make sure to not name two plugins develeoped by yourself the same), your name or pseudonym and a brief topic of the plugins purpose.
+**A short explanation**: The first 3 methods `getName`, `getAuthor` and `getDescription` are simple: They just return a String representing the metadata of your plugin. This includes its name (please make sure to not name two plugins identically), your name or pseudonym and a brief summary of the plugins purpose.
 
-The next two methods return the number of the API-Version you've developed the plugin with. These are evaluated in the loading process to ensure that your plugin works with the framework version from the user. You can get these numbers from `org.codeoverflow.chatoverflow.api.APIVersion`.
+The next two methods return the number of the API-Version you've developed the plugin with. These are evaluated in the loading process to ensure that your plugin works with the user's framework version. You can get these numbers from `org.codeoverflow.chatoverflow.api.APIVersion`.
 
-The last method `createNewPluginInstance` is the most interesting one: After the framework checked your meta and version information, it will eventually load your plugin completely. In this method (**and only in this method**), you may return an object that extends the plugin interface. This class will contain your plugin logic.
+The last method `createNewPluginInstance` is the most interesting one: After the framework checked your metadata, it will eventually load your plugin completely. In this method (**and only in this method**), you may return an object that extends the plugin interface. This class will contain your plugin logic.
 
 ## Implement the Plugin
 
@@ -64,7 +64,7 @@ private val twitchChatInput = require.input.twitchChat("reqTwitch", "A twitch ch
 private val nameToSayHelloTo = require.parameter.string("reqHello", "Your name", false)
 ```
 
-This code requires read-access to a twitch livestream chat and a parameter ("*a name to say hello to"*). Note: You can obviously not specify which channel the user might choose - but you can be sure that you will get a working input. The framework takes care of that. Please note that the requirements element already exists if you extend `PluginImpl`.
+This code requires read access to a twitch livestream chat and a parameter ("*a name to say hello to"*). Note: You can obviously not specify which channel the user might choose - but you can be sure that you will get a working input. The framework takes care of that. Please note that the requirements element already exists if you extend `PluginImpl`.
 
 After this, the last step is the `start` method. And it is as easy as you might think: Just add your own logic now, using the required parameters of your Requirement object. Here is a short example: This code will simply print out all messages from a twitch chat to the console. To access the chat, your required variable is used with the `getValue` method.
 
@@ -74,4 +74,4 @@ twitchChatInput.getValue.registerMessageHandler(msg => println(msg))
 
 Of course, you can also add own classes and infrastrucutre by now - the important steps are done, happy coding!
 
-*One last note: If you'r testing your plugin the first time, a full reload might be needed. Use the custom task `[Advanced] Full Reload and run ChatOverlfow` to do so. Afters this, you can configure the framework to start your plugin using the [CLI](usage/Using-the-CLI.md)!*
+*One last note: If you are testing your plugin for the first time, a full reload might be needed. Use the custom task `[Advanced] Full Reload and run ChatOverflow` to do so. Afters this, you can configure the framework to start your plugin using the [CLI](usage/Using-the-CLI.md)!*

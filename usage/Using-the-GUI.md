@@ -16,11 +16,11 @@ If the login was successful the gui will display the authentication key for this
 ## Creating a plugin instance
 Before running a plugin you have to create a plugin instance.  
 All available plugins are listed under `Plugin types`.  
-Add more plugins by putting the plugin `.jar` files into the plugins folder. If you are adding new plugins to the folder when the framework is running, you need to restart the framework in order to load the newly added plugins.
+Add more plugins by putting the plugin `.jar` files into the plugins folder. If you are adding new plugins to the folder while the framework is still running, you need to restart the framework in order for it to load the newly added plugins.
 
 ![](/img/usage/plugin-types.png)
 
-Enter the plugin name as well as the author of the plugin and give the instance a name (whatever you like), then click on `CREATE`: 
+Enter the plugin and author name of the plugin and give the instance a name (whatever you like), then click on `CREATE`: 
 
 ![](/img/usage/create-plugin.png)
 
@@ -29,7 +29,7 @@ The plugin instance should now be listed under `Plugin instances`:
 ![](/img/usage/plugin-instances.png)
 
 You can use the pen to copy the name of an instance.  
-There are buttons that allow you to `START` / `STOP` an instance, to show its log (if running) or requirements  and a button to `DELETE` the instance (just make sure to stop it before deleting it).
+There are buttons that allow you to `START` / `STOP` an instance, to show its log (if running) or requirements and a button to `DELETE` the instance (just make sure to stop it before deleting it).
 
 ## Setting plugin requirements
 Before you can start a plugin you need to set its requirements.

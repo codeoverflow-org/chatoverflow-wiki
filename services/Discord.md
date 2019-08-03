@@ -1,7 +1,7 @@
 <p><img align="right" width="128" height="128" src="/img/services/discord-logo.png"></p>
 
 The discord service allows you to connect to a discord text channel to get a list of recent messages,
-react on new / edited / deleted messages as well as reactions.  
+react on new, edited or deleted messages as well as reactions.  
 
 You can also send messages, files or even [fancy embeds](https://www.discord.club/static/home/img/embedg.png).  
 

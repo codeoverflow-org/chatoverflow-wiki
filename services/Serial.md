@@ -1,6 +1,6 @@
 <p><img align="right" width="128" height="54" src="/img/services/serial-arduino-logo.png"></p>
 
-The Serial service allows you to communicate with a device that is connected to your pc over a serial port.  
+The Serial service allows you to communicate with a device that is connected to your PC over a serial port.  
 
 The most common example is exchanging data with an [arduino](https://www.arduino.cc/) over USB.
 

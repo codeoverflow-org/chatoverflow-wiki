@@ -1,17 +1,17 @@
 <p><img align="right" width="128" height="128" src="/img/services/twitch-glitch.png"></p>  
 
-The twitch chat service allows plugins to connect to a channels chat by using IRC.  
+The Twitch chat service allows plugins to connect to a channels chat by using IRC.  
 
 They can get a List of recent messages, listen for new messages or send messages to the chat.
 
 ## Credentials
 
 ### `oauth` _(required)_ 
-The authentication token for accessing the twitch IRC chat with your account.  
+The authentication token for accessing the Twitch IRC chat with your account.  
 
 If you don't have such a token yet you can generate it on  https://twitchapps.com/tmi/.
 
-Just log into your twitch account and copy the token.  
+Just log into your Twitch account and copy the token.  
 Then add it as a credentials value with the key `oauth` as described [here](/usage/Using-the-GUI.md#Set-credentials).
 
 _Note: Copy the entire key **including** the `oauth:` at the beginning._
@@ -32,7 +32,7 @@ import org.codeoverflow.chatoverflow.api.io.event.chat.twitch.TwitchChatMessageR
 import org.codeoverflow.chatoverflow.api.io.dto.chat.twitch.TwitchChatMessage;
 
 public class TestPlugin extends PluginImpl {
-    //require a new twitch chat input
+    //require a new Twitch chat input
     private Requirement<TwitchChatInput> twitchIn = 
         require.input.twitchChat("twitchChat", "The Twitch chat", false);
     
@@ -96,7 +96,7 @@ import org.codeoverflow.chatoverflow.api.plugin.PluginImpl;
 import org.codeoverflow.chatoverflow.api.plugin.PluginManager;
 
 public class TestPlugin extends PluginImpl {
-    //require a new twitch chat output
+    //require a new Twitch chat output
     private Requirement<TwitchChatOutput> twitchOut = 
         require.output.twitchChat("twitchChat", "The Twitch chat", false);
     
@@ -119,7 +119,7 @@ public class TestPlugin extends PluginImpl {
             + LocalTime.now().format(DateTimeFormatter.ISO_LOCAL_TIME) + " Uhr!";
         log(timeMessage);
         
-        //Output the message to the twitch chat
+        //Output the message to the Twitch chat
         twitchOut.get().sendChatMessage(timeMessage);
      }
      
