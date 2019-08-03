@@ -1,6 +1,7 @@
 Thank you for improving *Chat Overflow*.  
 While plugins live in their own project, source connections (e.g. to a platform like Twitch or Discord) exist in the framework itself.  
-By this measure, we can make sure that everyone profits from the same features.  
+<!-- By this measure, we can make sure that everyone profits from the same features.   -->
+We made this design choice so that all platform source connectors are free to access by all plugin developers.
 This wiki entry tries to show you the different steps needed to implement a new connection.
 
 1. Add new types to the API (Also register them in the requirement Input/Output section)

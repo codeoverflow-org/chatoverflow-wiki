@@ -10,7 +10,7 @@ Once the framework is running open http://localhost:2400/ in a browser and wait 
 ![](/img/usage/login.png)
 
 When running for the first time enter a password that you want to use for securing your credentials and click on `REGISTER`.  
-If you already are registered, use your password to login.  
+If you are already registered, use your password to login.  
 If the login was successful the gui will display the authentication key for this session.  
 
 ## Creating a plugin instance
