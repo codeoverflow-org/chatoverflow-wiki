@@ -22,6 +22,7 @@ Usage: Chat Overflow [options]
                            default web server port, used eg. for the rest api and web gui
   -o, --enablePluginOutput
                            set this flag to enable plugin log output on console
+  -f, --enableLogFile      set this flag to enable logging to log files
 
 For more information, please visit http://codeoverflow.org/
 ```
