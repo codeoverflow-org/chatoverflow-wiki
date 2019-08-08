@@ -1,5 +1,5 @@
 ## Run Configuration Bug 
-Because of the differences in IntelliJ versions the run configurations could be broken. If they are broken, change the `classpath or module` setting in `Edit configurations...` to ChatOverflow root module. Now everything should be working fine again.
+Because of the differences in IntelliJ versions the run configurations could be broken. If they are broken, change the `classpath or module` setting in `Edit configurations...` to ChatOverflow root module (`chatoverflow`). Now everything should be working fine again.
 
 ## Credentials value encrypted with wrong auth key
 ![](/img/usage/value-encrypted-wrong-key.png)  
