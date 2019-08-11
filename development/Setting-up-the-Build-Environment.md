@@ -8,7 +8,7 @@ For working on chatoverflow the following tools must be installed on your PC:
 * Java 8 version `1.8.0_161` or newer
 * [git - version control system](https://git-scm.com/downloads) 
 * [sbt - Scala build tool](https://www.scala-sbt.org/download.html)
-* [yarn](https://yarnpkg.com/) or [npm](https://www.npmjs.com/get-npm)  - pakage manager
+* [yarn](https://yarnpkg.com/) or [npm](https://www.npmjs.com/get-npm)  - package manager
 
 ## Windows
 
