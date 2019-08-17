@@ -5,7 +5,7 @@ head over to [Build Environment](development/Setting-up-the-Build-Environment.md
 ## Prerequisites
 
 For running Chatoverflow you will need Java 8, version `1.8.0_161` or later.  
-You can download it [here].(https://www.java.com/en/download/)
+You can download it [here](https://www.java.com/en/download/).
 
 ## Installation
 
