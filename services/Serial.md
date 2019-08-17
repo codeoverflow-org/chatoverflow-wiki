@@ -51,7 +51,7 @@ import org.codeoverflow.chatoverflow.api.plugin.PluginImpl;
 import org.codeoverflow.chatoverflow.api.plugin.PluginManager;
 
 public class TestPlugin extends PluginImpl {
-    //require a new twitch chat input
+    //require a new serial input
     private Requirement<SerialInput> serialIn = 
         require.input.serial("serialIn", "An arduino connected to the serial port", false);
     
@@ -101,7 +101,7 @@ import org.codeoverflow.chatoverflow.api.plugin.PluginImpl;
 import org.codeoverflow.chatoverflow.api.plugin.PluginManager;
 
 public class TestPlugin extends PluginImpl {
-    //require a new twitch chat output
+    //require a new serial output
     private Requirement<SerialOutput> serialOut = 
         require.output.serial("serialOut", "An arduino connected to the serial port", false);
     
