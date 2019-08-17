@@ -23,4 +23,5 @@
 **Services:**
 1. [Twitch Chat](services/Twitch-Chat.md)
 2. [Discord](services/Discord.md)
-2. [Serial Port (Arduino)](services/Serial.md)
+3. [Serial Port (Arduino)](services/Serial.md)
+4. [TipeeeStream](services/TipeeeStream.md)
