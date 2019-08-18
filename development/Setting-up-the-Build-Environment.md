@@ -15,6 +15,7 @@ For working on chatoverflow the following tools must be installed on your PC:
 1. Save the [📄 install.bat](https://raw.githubusercontent.com/codeoverflow-org/chatoverflow-setup/master/install.bat) to the directory where you want to install the build environment.
 
 2. Execute the script, use the `--dev` argument if you want to check out the development branch automatically.
+   If you want to do an advanced build directly after the installation use the `--build` flag.
 
 3. Drink some coffee while the script clones all repositories, sets up sbt and installs the gui.
 
@@ -25,6 +26,7 @@ For working on chatoverflow the following tools must be installed on your PC:
 1. Save the [📄 install.sh](https://raw.githubusercontent.com/codeoverflow-org/chatoverflow-setup/master/install.sh) to the directory where you want to install the build environment.
 
 2. Execute the script, use the `--dev` argument if you want to check out the development branch automatically.
+   If you want to do an advanced build directly after the installation use the `--build` flag.
 
 3. Drink some coffee while the script clones all repositories, sets up sbt and installs the gui.
 
