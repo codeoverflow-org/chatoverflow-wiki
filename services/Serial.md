@@ -1,6 +1,6 @@
 <p><img align="right" width="128" height="54" src="/img/services/serial-arduino-logo.png"></p>
 
-The Serial service allows to communicate with a device that is connected to your pc over a serial port.  
+The Serial service allows you to communicate with a device that is connected to your PC over a serial port.  
 
 The most common example is exchanging data with an [arduino](https://www.arduino.cc/) over USB.
 
@@ -51,7 +51,7 @@ import org.codeoverflow.chatoverflow.api.plugin.PluginImpl;
 import org.codeoverflow.chatoverflow.api.plugin.PluginManager;
 
 public class TestPlugin extends PluginImpl {
-    //require a new twitch chat input
+    //require a new serial input
     private Requirement<SerialInput> serialIn = 
         require.input.serial("serialIn", "An arduino connected to the serial port", false);
     
@@ -101,7 +101,7 @@ import org.codeoverflow.chatoverflow.api.plugin.PluginImpl;
 import org.codeoverflow.chatoverflow.api.plugin.PluginManager;
 
 public class TestPlugin extends PluginImpl {
-    //require a new twitch chat output
+    //require a new serial output
     private Requirement<SerialOutput> serialOut = 
         require.output.serial("serialOut", "An arduino connected to the serial port", false);
     
@@ -129,7 +129,7 @@ public class TestPlugin extends PluginImpl {
 
 ### Example arduino script
 
-An simple ping-pong example script for your arduino.
+A simple ping-pong example script for your arduino.
 ```cpp
 String inputString = "";     
 boolean stringComplete = false; 
