@@ -45,8 +45,8 @@ public class TestPlugin extends PluginImpl {
     
     @Override
     public void setup() {
-        //register the subscription event handler that reacts on subscriptions 
-        twitchIn.get().registerChatMessageReceiveEventHandler(new SubHandler());
+        // register the subscription event handler that reacts on subscriptions 
+        tipeeeIn.get().registerSubscriptionEventHandler(new SubHandler());
     }
     
     @Override
