@@ -35,8 +35,8 @@ import org.codeoverflow.chatoverflow.api.io.event.stream.tipeeestream.Tipeeestre
 import org.codeoverflow.chatoverflow.api.io.dto.stat.stream.tipeeestream.TipeeestreamSubscription;
 
 public class TestPlugin extends PluginImpl {
-    //require a new TipeeeStream event input
-    private Requirement<TwitchChatInput> tipeeeIn = 
+    // require a new TipeeeStream event input
+    private Requirement<TipeeestreamEventInput> tipeeeIn = 
         require.input.tipeeeStream("tipeeestream", "Connection to the TipeeeStream api", false);
     
     public TestPlugin(PluginManager pluginManager) {
@@ -53,21 +53,20 @@ public class TestPlugin extends PluginImpl {
     public void loop() {
     }
      
-     @Override 
-     public void shutdown() {
-         log("Shutdown!");
-     }
-     
-     private class SubHandler implements Consumer<TipeeestreamSubscriptionEvent> {
-         
-         @Override
-         public void accept(TipeeestreamSubscriptionEvent event) {
-             TipeeestreamSubscription sub = event.getInfo();
-             
-            //print information about the event to the log
+    @Override 
+    public void shutdown() {
+        log("Shutdown!");
+    }
+      
+    private class SubHandler implements Consumer<TipeeestreamSubscriptionEvent> {
+        @Override
+        public void accept(TipeeestreamSubscriptionEvent event) {
+            TipeeestreamSubscription sub = event.getInfo();
+            
+            // print information about the event to the log
             log(sub.getSubscriber().getDisplayName() + " subscribed. Resub streak: " 
                 + sub.getResub());
-         }
-     }
- }
+        }
+    }
+}
 ```
