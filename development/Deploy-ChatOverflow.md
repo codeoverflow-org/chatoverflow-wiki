@@ -4,10 +4,10 @@ Chat Overflow has two different kinds of deployments: a end-user deployment that
 
 To create a deployment for end-users that only want to run plugins and use the framework follow these steps:
 
-1. Execute the IntelliJ run configuration `[Deploy] Generate Bootstrap Launcher and deploy` or run the make target with `make bootstrap_deploy`. This updates the `dependencies.xml`-file in the bootstrap-project with the current dependencies, bundles everything and copies it along with start scripts, the license and a readme to the `deploy`-folder. Magic.
+1. Execute the IntelliJ run configuration `[Deploy] Generate Bootstrap Launcher and deploy` or run the make target with `make bootstrap_deploy`. This bundles everything and copies it along with start scripts, the license and a readme to the `deploy`-folder. Magic.
 2. Create a zip archive of the `deploy` directory. 
 
-The `deploy`-folder contains the bootstrap launcher that can be started with the start scripts or with `java -jar ChatOverflow.jar`. It then downloads all required libraries into the `lib`-folder and starts Chat Overflow.
+The `deploy`-folder contains the bootstrap launcher that can be started with the start scripts or with `java -jar ChatOverflow.jar`. It then downloads all required libraries, which are specified in the `dependencies.pom` file that is included in the jar file of the framework, to the local cache using [Coursier](https://get-coursier.io) and starts Chat Overflow.
 
 The folder-structure of the end-user deployment is as follows:
 
@@ -20,7 +20,7 @@ deploy/
 └──README.html               A readme with starter information
 ```
 
-If the bootstrap launcher and framework have been started once they will create directories for the required libraries, config files, data files of plugins and plugin jars. These directories and their contents are *NOT* to be included in the deployment zip file.
+If the framework has been started once it will create directories for config files, data files of plugins and plugin jars. These directories and their contents are *NOT* to be included in the deployment zip file.
 
 ## Plugin Developer Deployment
 
