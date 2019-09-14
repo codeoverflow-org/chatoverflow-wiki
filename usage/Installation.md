@@ -4,7 +4,7 @@ head over to [Build Environment](development/Setting-up-the-Build-Environment.md
 
 ## Prerequisites
 
-For running Chatoverflow you will need Java 8, version `1.8.0_161` or later.  
+For running ChatOverflow you will need Java 8, version `1.8.0_161` or later. However we recommend that you instead use at least java 9, because it is able to re-use commonly used dependencies between plugins like the Scala Library. Java 8 re-loads these dependencies for each plugin that uses thems and keeps seperate copies of the classes in memory, thus the memory usage with Java 8 is higher.
 You can download it [here](https://www.java.com/en/download/).
 
 ## Installation
