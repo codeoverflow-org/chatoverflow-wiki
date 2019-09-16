@@ -26,3 +26,4 @@
 2. [Discord](services/Discord.md)
 3. [Serial Port (Arduino)](services/Serial.md)
 4. [TipeeeStream](services/TipeeeStream.md)
+5. [StreamElements](services/StreamElements.md)
