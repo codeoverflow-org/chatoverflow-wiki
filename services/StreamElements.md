@@ -16,7 +16,14 @@ Click on `Show Secrets`, copy the entire key labeled `JWT Token`, add it as a cr
 ## Plugin development with the StreamElements Event Input
 This simple example plugin logs all Subscriptions:
 
-For donations and follows just use the appropriate register method of the input.
+For other event types just use the appropriate register method of the input. The StreamElements event input is capable of all the following events:
+
+- Follows
+- Subscriptions
+- Donations
+- Cheers
+- Raids
+- Hosts
 
 For more information have a look at the [javadoc](http://docs.codeoverflow.org/chatoverflow-api/org/codeoverflow/chatoverflow/api/io/input/event/StreamElementsEventInput.html).
 
