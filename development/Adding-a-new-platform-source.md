@@ -7,6 +7,7 @@ This wiki entry tries to show you the different steps needed to implement a new 
 1. Add new types to the API (Also register them in the requirement Input/Output section)
 2. Create a new package in the framework services package and implement the source specific connector
 3. Create a impl package and implement the types you have added in the API
+4. Enhance your connector with metadata
 
 ## Add new types to the API
 
@@ -36,3 +37,22 @@ class SampleInputImpl extends InputImpl[SampleConnector] with SampleInput with W
 ```
 
 **Important:** The @Impl-annotation will guide the framework to load your new connector and types.
+
+## Metadata
+
+To guide the user while adding new connectors / platform sources, we ask you to provide some metadata for your connector.
+
+Create a XML-file with the full name of your connector type, e.g. `org.codeoverflow.chatoverflow.requirement.service.discord.discordchatconnector.xml` inside the `main/resources/connector`-folder of the project. This file should contain the following information:
+
+```xml
+<connector>
+    <display>The Display Name</display>
+    <description>A short description</description>
+    <wiki>A link to the corresponding wiki entry</wiki>
+    <icon48>
+      a base64 encoded 48x48 png file
+    </icon48>
+</connector>
+```
+
+Note that this step is optional, but highly recommended.
