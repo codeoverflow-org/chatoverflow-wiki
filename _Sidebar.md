@@ -19,9 +19,11 @@
 3. [Adding a new platform source](development/Adding-a-new-platform-source.md)  
 4. [Deploy ChatOverflow](development/Deploy-ChatOverflow.md)
 5. [Structure](development/Structure.md)
+6. [Pluggable migration guide](development/Pluggable-migration-guide.md)
 
 **Services:**
 1. [Twitch Chat](services/Twitch-Chat.md)
 2. [Discord](services/Discord.md)
 3. [Serial Port (Arduino)](services/Serial.md)
 4. [TipeeeStream](services/TipeeeStream.md)
+5. [File](services/File.md)
