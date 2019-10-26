@@ -62,7 +62,7 @@ public class TestPlugin extends PluginImpl {
     @Override
     public void setup() {
         //register the message handler that reacts on incoming messages
-        twitchIn.get().registerDataAvailableEventHandler(new DataHandler());
+        serialIn.get().registerDataAvailableEventHandler(new DataHandler());
     }
     
     @Override
