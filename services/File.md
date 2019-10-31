@@ -77,8 +77,12 @@ Have a look at this simple example plugin that saves files and creates or delete
 For more information have a look at the [javadoc](http://docs.codeoverflow.org/chatoverflow-api/org/codeoverflow/chatoverflow/api/io/output/FileOutput.html).
 
 ***TODO: Example for file output***
-<!--
+
 ```java
+import java.awt.image.BufferedImage;
+import java.awt.Graphics2D;
+import java.awt.Color;
+
 import org.codeoverflow.chatoverflow.api.plugin.configuration.Requirement;
 import org.codeoverflow.chatoverflow.api.io.output.FileOutput;
 import org.codeoverflow.chatoverflow.api.plugin.PluginImpl;
@@ -95,7 +99,30 @@ public class TestPlugin extends PluginImpl {
     
     @Override
     public void setup() {
-        //TODO
+        //create a folder called "test" inside the data folder
+        fso.createDirectory("test");
+        
+        //create a sample file with a stupid swabian tongue twister
+        fso.saveFile("Schellet's net an sellrer Schelle, selle Schelle schellet net.\n"
+            + "Schellet's an seller Schelle, selle Schelle schellet!", 
+            "test/tounge-twister.txt");
+        
+        //save some binary to a file
+        byte[] binary = {0x48, 0x65, 0x6C, 0x6C, 0x6F, 0x20, 0x57, 0x6F, 0x72, 0x6C, 0x64, 0x21};
+        fso.saveBinaryFile(binary, "test.bin");
+
+        //save an image
+        BufferedImage img = new BufferedImage(256, 256, BufferedImage.TYPE_INT_ARGB);
+        Graphics2D graphics = img.createGraphics();
+        graphics.setPaint(new Color(255, 121, 1));
+        graphics.fillRect( 0, 0, img.getWidth(), img.getHeight() );
+        fso.saveImage(img, "test.png");
+
+        //check if a file exists
+        boolean exists = fso.exists("test.txt");
+        
+        //delete a file 
+        if (exists) fso.delete("test.txt");
     }
     
     @Override
@@ -107,4 +134,3 @@ public class TestPlugin extends PluginImpl {
      }
 }
 ```
--->
