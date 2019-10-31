@@ -76,8 +76,6 @@ Have a look at this simple example plugin that saves files and creates or delete
 
 For more information have a look at the [javadoc](http://docs.codeoverflow.org/chatoverflow-api/org/codeoverflow/chatoverflow/api/io/output/FileOutput.html).
 
-***TODO: Example for file output***
-
 ```java
 import java.awt.image.BufferedImage;
 import java.awt.Graphics2D;
@@ -108,7 +106,8 @@ public class TestPlugin extends PluginImpl {
             "test/tounge-twister.txt");
         
         //save some binary to a file
-        byte[] binary = {0x48, 0x65, 0x6C, 0x6C, 0x6F, 0x20, 0x57, 0x6F, 0x72, 0x6C, 0x64, 0x21};
+        byte[] binary = {0x48, 0x65, 0x6C, 0x6C, 0x6F, 0x20,
+                         0x57, 0x6F, 0x72, 0x6C, 0x64, 0x21};
         fso.saveBinaryFile(binary, "test.bin");
 
         //save an image
