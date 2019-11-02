@@ -27,3 +27,5 @@
 3. [Serial Port (Arduino)](services/Serial.md)
 4. [TipeeeStream](services/TipeeeStream.md)
 5. [File](services/File.md)
+6. [RCON](services/RCON.md)
+7. [Sample](services/Sample.md)
