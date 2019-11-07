@@ -1,4 +1,4 @@
-Chat Overflow has two different kinds of deployments: a end-user deployment that is only able to run plugins and a plugin developer deployment that can also be used to create plugins. These deployments are usually generated and published to the world when a new release of Chat Overflow is released.
+Chat Overflow has two different kinds of deployments: a end-user deployment that is only able to run plugins and a plugin developer deployment that can also be used to create plugins. These deployments are usually generated and published to the world when a new version of Chat Overflow is released.
 
 ## End-User Deployment
 
