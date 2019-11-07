@@ -23,9 +23,10 @@ For more information about the chat overflow project, please visit [codeoverflow
 2. [Writing a plugin](development/Writing-a-plugin.md)  
 3. [Adding a new platform source](development/Adding-a-new-platform-source.md)  
 4. [Deploy ChatOverflow](development/Deploy-ChatOverflow.md)
-5. [Structure](development/Structure.md)
-6. [Versioning](development/Versioning.md)
-7. [Pluggable migration guide](development/Pluggable-migration-guide.md)
+5. [Working with NPM](development/Working-with-NPM.md)
+6. [Structure](development/Structure.md)
+7. [Versioning](development/Versioning.md)
+8. [Pluggable migration guide](development/Pluggable-migration-guide.md)
 
 **Services:**
 1. [Twitch Chat](services/Twitch-Chat.md)
