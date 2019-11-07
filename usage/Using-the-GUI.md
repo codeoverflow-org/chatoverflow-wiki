@@ -65,5 +65,5 @@ Look for `requiredCredentialKeys` and `optionalCredentialKeys`.
 
 If you are getting errors when adding credentials [Frequent-Issues](Frequent-Issues.md#Credentials-value-encrypted-with-wrong-auth-key) might contain a solution.
 
-*Please note: Added credentials are encrypted with AES 128/256.*
+*Please note: Added credentials are encrypted with AES 128/256. The password is not stored anywhere. If you loose your password, there will be no way to reuse your configured and saved credentials.*
 
