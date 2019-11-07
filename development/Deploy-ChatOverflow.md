@@ -14,7 +14,7 @@ The folder-structure of the end-user deployment is as follows:
 ```
 deploy/
 ├──bin/                      Jars of the API, the framework and the GUI
-├──ChatOverflow.jar          Far-Jar of the bootstrap launcher
+├──ChatOverflow.jar          Fat-Jar of the bootstrap launcher
 ├──ChatOverflow.*            Start scripts for various platforms
 ├──LICENSE                   EPL-2.0 license
 └──README.html               A readme with starter information
