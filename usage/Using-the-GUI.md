@@ -2,7 +2,8 @@ The GUI for chatoverflow is still in development.
 That's why we have the **Better REPL**, an easy-to-use one-page dashboard, where everything can be controlled.
 
 ## Starting the Better REPL
-When using the GUI for the first time use the `[Advanced]` run configuration that packages the gui into the chatoverflow jar.  
+When using the GUI for the first time use the `[Advanced]` run configuration that packages the gui. Make sure to reload sbt afterwards to make IntelliJ find and load the gui.
+
 For all further runs you may use the `[Simple]` run configuration which is way faster.  
 
 Once the framework is running open http://localhost:2400/ in a browser and wait for the server status to display `Connected!`. Now click on `OPEN BETTER REPL`. 
