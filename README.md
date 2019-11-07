@@ -24,7 +24,8 @@ For more information about the chat overflow project, please visit [codeoverflow
 3. [Adding a new platform source](development/Adding-a-new-platform-source.md)  
 4. [Deploy ChatOverflow](development/Deploy-ChatOverflow.md)
 5. [Structure](development/Structure.md)
-6. [Pluggable migration guide](development/Pluggable-migration-guide.md)
+6. [Versioning](development/Versioning.md)
+7. [Pluggable migration guide](development/Pluggable-migration-guide.md)
 
 **Services:**
 1. [Twitch Chat](services/Twitch-Chat.md)
