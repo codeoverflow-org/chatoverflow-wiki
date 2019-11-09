@@ -163,8 +163,8 @@ Example: `2011-12-30T10:15:30`, `2019-11-09T18:40`
 
 Example for developers (Java):
 ```java
-private Requirement<TimeParameter> appointment = 
-                                    require.parameter.timeParameter("appointment");
+private Requirement<DateTimeParameter> appointment = 
+                                    require.parameter.dateTimeParameter("appointment");
 @Override
 public void setup() {
   log("Yo have an appointment on " + appointment.get().get().toLocalDate().toString() 
