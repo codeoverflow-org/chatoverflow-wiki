@@ -1,4 +1,4 @@
-Plugin Developers can request custom input from a user using `Parameters`. There are currently 8 types of parameter.
+Plugin Developers can request custom input from a user using `Parameters`. There are currently 8 types of parameters.
 ## String parameter
 The string parameter requires you to enter a string. 
 
@@ -55,7 +55,7 @@ public void setup() {
 }
 ```
 ## URI parameter
-The URI parameter reqires you to enter an [Uniform Resource Identifier](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier), most comonly a link to a website
+The URI parameter reqires you to enter an [Uniform Resource Identifier](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier), most comonly a link to a website.
 
 Example: `donate/to/team.txt`, `trees.html`, `org.jpg`, `http://www.codeoverflow.org/`
 
@@ -68,7 +68,7 @@ public void setup() {
 }
 ```
 ## Color parameter
-The color parameter requires you to enter an Color. The color has to be in one of the following formats:
+The color parameter requires you to enter a Color. The color has to be in one of the following formats:
 
 (R = Red, G = Green, B = Blue, A = Alpha)
 
@@ -87,7 +87,7 @@ public void setup() {
 }
 ```
 ## List parameter
-The list parameter requires you to enter an list. You have to seperate entries by using a comma.
+The list parameter requires you to enter a list. You have to seperate entries by using a comma.
 
 Example: `i,like,trees`, `message`, `do you like,this wiki entry?`
 
