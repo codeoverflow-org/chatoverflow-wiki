@@ -12,15 +12,7 @@
 4. [Frequent Issues](usage/Frequent-Issues.md)  
     1. [Run Configuration Bug](usage/Frequent-Issues.md#Run-Configuration-Bug)  
     2. [Credentials value encrypted with wrong auth key](usage/Frequent-Issues.md#Credentials-value-encrypted-with-wrong-auth-key)  
-5. [Using Parameter](usage/Using-Parameter.md)
-    1. [String Parameter](usage/Using-Parameter.md#String-parameter)
-    2. [Integer Parameter](usage/Using-Parameter.md#Integer-parameter)
-    3. [Double Parameter](usage/Using-Parameter.md#Double-parameter)
-    4. [Boolean Parameter](usage/Using-Parameter.md#Boolean-parameter)
-    5. [URI Parameter](usage/Using-Parameter.md#URI-parameter)
-    6. [Color Parameter](usage/Using-Parameter.md#Color-parameter)
-    7. [List Parameter](usage/Using-Parameter.md#List-parameter)
-    8. [Map Parameter](usage/Using-Parameter.md#Map-parameter)
+5. [Using Parameters](usage/Using-Parameters.md)
 
 **Development:**  
 1. [Build Environment](development/Setting-up-the-Build-Environment.md)
