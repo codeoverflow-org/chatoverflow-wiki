@@ -58,7 +58,7 @@ Some of them are required for the connector to work and some are optional.
 ![](/img/usage/connectors.png)
 
 Click on the `Request details...` link. Then the gui will display if the connector is running and which credentials should be set. Underlined ones are required, the plain ones are optional.  
-Use the blue pen to copy the key, the identifier and the type of the connector and then use the manage credentials field to the value of the credentials.
+Use the blue pen to copy the key, the identifier and the type of the connector and then use the manage credentials field to add the value of the credentials.
 
 ![](/img/usage/credentials.png)
 
