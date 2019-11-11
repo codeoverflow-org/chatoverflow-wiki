@@ -27,7 +27,8 @@ For more information about the chat overflow project, please visit [codeoverflow
 5. [Working with NPM](development/Working-with-NPM.md)
 6. [Structure](development/Structure.md)
 7. [Versioning](development/Versioning.md)
-8. [Pluggable migration guide](development/Pluggable-migration-guide.md)
+8. [Releasing](development/Release-ChatOverflow.md)
+9. [Pluggable migration guide](development/Pluggable-migration-guide.md)
 
 **Services:**
 1. [Twitch Chat](services/Twitch-Chat.md)
