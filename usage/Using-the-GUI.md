@@ -53,15 +53,15 @@ To add a connector use whatever source identifier you like, specify the connecto
 
 ## Set credentials
 Every connector requires you to set the credentials for that service.  
-Use the blue pen to copy the identifier and the type to the connector and then use the manage credentials field to set key and value of the credentials.
+Some of them are required for the connector to work and some are optional.
+
+![](/img/usage/connectors.png)
+
+Click on the `Request details...` link. Then the gui will display if the connector is running and which credentials should be set. Underlined ones are required, the plain ones are optional.  
+Use the blue pen to copy the key, the identifier and the type of the connector and then use the manage credentials field to add the value of the credentials.
 
 ![](/img/usage/credentials.png)
 
-Currently the only way to view which credentials a connector requires is to click on `GET` in the manage credentials section and have a look at the returned response which is displayed in the Last request section. It should look similar to this:
-```json
-{"found":true,"sourceIdentifier":"twitch","uniqueTypeString":"org.codeoverflow.chatoverflow.requirement.service.twitch.chat.TwitchChatConnector","areCredentialsSet":true,"isRunning":false,"requiredCredentialKeys":["oauth"],"optionalCredentialKeys":[]}
-```
-Look for `requiredCredentialKeys` and `optionalCredentialKeys`.
 
 If you are getting errors when adding credentials [Frequent-Issues](Frequent-Issues.md#Credentials-value-encrypted-with-wrong-auth-key) might contain a solution.
 

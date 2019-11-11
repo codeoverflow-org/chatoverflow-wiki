@@ -26,6 +26,9 @@ Usage: Chat Overflow [options]
 
 For more information, please visit http://codeoverflow.org/
 ```
+> ## Attention:
+> ### Currently there is a bug that prevents custom web server ports from working properly.
+> ### See [#149](https://github.com/codeoverflow-org/chatoverflow/issues/149).
 
 ## Configuration
 

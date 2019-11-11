@@ -17,6 +17,7 @@ For more information about the chat overflow project, please visit [codeoverflow
 4. [Frequent Issues](usage/Frequent-Issues.md)  
     1. [Run Configuration Bug](usage/Frequent-Issues.md#Run-Configuration-Bug)  
     2. [Credentials value encrypted with wrong auth key](usage/Frequent-Issues.md#Credentials-value-encrypted-with-wrong-auth-key)  
+5. [Using Parameters](usage/Using-Parameters.md)
 
 **Development:**  
 1. [Build Environment](development/Setting-up-the-Build-Environment.md)
