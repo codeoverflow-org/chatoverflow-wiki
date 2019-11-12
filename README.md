@@ -16,7 +16,8 @@ For more information about the chat overflow project, please visit [codeoverflow
     5. [Set credentials](usage/Using-the-GUI.md#Set-credentials)  
 4. [Frequent Issues](usage/Frequent-Issues.md)  
     1. [Run Configuration Bug](usage/Frequent-Issues.md#Run-Configuration-Bug)  
-    2. [Credentials value encrypted with wrong auth key](usage/Frequent-Issues.md#Credentials-value-encrypted-with-wrong-auth-key)  
+    2. [Credentials value encrypted with wrong auth key](usage/Frequent-Issues.md#Credentials-value-encrypted-with-wrong-auth-key)
+    3. ["GUI not found" error message](usage/Frequent-Issues.md#gui-not-found-error-message)  
 5. [Using Parameters](usage/Using-Parameters.md)
 
 **Development:**  
