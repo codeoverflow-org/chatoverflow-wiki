@@ -1,14 +1,14 @@
 We use a npm package to connect the REST-API to our web client. The package is generated using [swagger](https://swagger.io/) annotations in our scala implementation of the interface. By this approach we ensure maximum reliability while having minimal manual implementation effort. The npm package is hosted with the [new github package registry](https://github.com/features/package-registry) and can be found [here](https://github.com/codeoverflow-org/chatoverflow/packages).
 
-This article describes, how new versions of the package with the client bindings can be generated and published. This is important for team members and everyone interessted in (G)UI development.
+This article describes, how new versions of the package with the client bindings can be generated and published. This is important for team members and everyone interested in (G)UI development.
 
 ## Prerequisites
 
-There are three basic steps for gettings started with this process.
+There are three basic steps for settings started with this process.
 
 1. Install [node / npm](https://nodejs.org/). If you have it already installed, make sure to update it to the last release using `sudo npm install -g npm@latest`.
-2. Login to the github package regisitry. This is described [here](https://help.github.com/en/github/managing-packages-with-github-package-registry/configuring-npm-for-use-with-github-package-registry#authenticating-to-github-package-registry). Basically, it's one console command using a personal token from your [github user settings](https://github.com/settings/tokens): `npm login --registry=https://npm.pkg.github.com`
-3. Download the lastest *2.x*-version of `swagger-codegen-cli`. It can be found on [maven](https://mvnrepository.com/artifact/io.swagger/swagger-codegen-cli). Please make sure, that you do **not** use the *3.x*.-version, since it is not compatible with your current framework dependencies. At the time of writing this article, the latest *2.x*-version is `2.4.9`.
+2. Login to the github package registry. This is described [here](https://help.github.com/en/github/managing-packages-with-github-package-registry/configuring-npm-for-use-with-github-package-registry#authenticating-to-github-package-registry). Basically, it's one console command using a personal token from your [github user settings](https://github.com/settings/tokens): `npm login --registry=https://npm.pkg.github.com`
+3. Download the latest *2.x*-version of `swagger-codegen-cli`. It can be found on [maven](https://mvnrepository.com/artifact/io.swagger/swagger-codegen-cli). Please make sure, that you do **not** use the *3.x*.-version, since it is not compatible with your current framework dependencies. At the time of writing this article, the latest *2.x*-version is `2.4.9`.
 
 ## Build
 
@@ -16,7 +16,7 @@ Next up, you can build a new version of the npm package. This is also applicable
 
 1. Start by increasing the build-part of the version number of the REST-API by 1. It can be found the [VersionInfo](https://github.com/codeoverflow-org/chatoverflow/blob/develop/src/main/scala/org/codeoverflow/chatoverflow/VersionInfo.scala)-file (called `rest`). The build number is the last part, e.g. going from `3.0.0-5` to `3.0.0-6`. This step is only needed once per published version of your npm package build.
 
-2. Start the framework and make sure, that the build version inscrease worked and your changes to the REST-API are available.
+2. Start the framework and make sure, that the build version increase worked and your changes to the REST-API are available.
 
 3. Generate the npm package using `swagger-codegen-cli`. This can be achieved with the following console command (the backslahes are only needed for *nix-systems):
 

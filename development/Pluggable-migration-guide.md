@@ -4,7 +4,7 @@ This is because as of 0.3-prealpha `Pluggable` got removed and replaced with a x
 
 Here are the required steps to make your plugin compatible with the new format:
 
-1. Delete your class implementing `Pluggable`. Its not used anymore got removed from the api.
+1. Delete your class implementing `Pluggable`. Its not used anymore and got removed from the api.
 
 2. Create the resources directory at `yourPlugin/src/main/resources`.
 
