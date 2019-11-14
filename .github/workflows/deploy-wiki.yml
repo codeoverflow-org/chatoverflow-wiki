@@ -1,0 +1,36 @@
+name: 'Deploy wiki to https://github.com/codeoverflow-org/chatoverflow/wiki'
+on:
+  push:
+    branches:
+      - master
+jobs:
+  deploy_wiki:
+    name: 'Deploy wiki'
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'Configure git'
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}
+        run: |
+          git init
+          git config user.email "<>"
+          git config user.name "Github Actions"
+          git pull https://${GH_PAT}@github.com/codeoverflow-org/chatoverflow-wiki.git
+      - name: 'Fix links'
+        run: |
+          find . -type f -name "*.md" -exec sed -i 's:\[\([^\n]\+\)\](\([^ \n]\+/\)*\([^ \n/]\+\)\.md\(#[^ \n/]\+\)\?):[\1](\3\4):g' {} +
+          find . -type f -name "*.md" -exec sed -i 's:\[\([^\n]*\)\](/\([^ \n]\+\)):[\1](\2):g' {} +
+          find . -type f -name "*.md" -exec sed -i 's:<img\([^>\n]* src *= *\)"/\([^ >\n]\+\)"\([^>\n]*\)>:<img\1"\2"\3>:g' {} +
+          git add .
+      - name: 'Exclude files'
+        run: |
+          git rm README.md --cached
+          git rm .github -r --cached
+      - name: 'Commit & Push'
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}
+        run: |
+          git commit --message "Deploy wiki with Github Actions"
+          git push --force https://${GH_PAT}@github.com/codeoverflow-org/chatoverflow.wiki.git master
+
+# This file is not included in the wiki.
