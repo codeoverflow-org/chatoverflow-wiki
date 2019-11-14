@@ -1,4 +1,4 @@
-name: 'Deploy wiki to https://github.com/codeoverflow-org/chatoverflow/wiki'
+name: 'Deploy wiki'
 on:
   push:
     branches:
