@@ -8,7 +8,7 @@ jobs:
     name: 'Deploy wiki'
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@1
+      - uses: actions/checkout@v1
       - name: 'Configure git user '
         run: |
           git config user.email "<>"
