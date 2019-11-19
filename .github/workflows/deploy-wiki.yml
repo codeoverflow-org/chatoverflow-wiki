@@ -8,14 +8,11 @@ jobs:
     name: 'Deploy wiki'
     runs-on: ubuntu-latest
     steps:
-      - name: 'Configure git'
-        env:
-          GH_PAT: ${{ secrets.GH_PAT }}
+      - uses: actions/checkout@v1
+      - name: 'Configure git user '
         run: |
-          git init
           git config user.email "<>"
           git config user.name "Github Actions"
-          git pull https://${GH_PAT}@github.com/codeoverflow-org/chatoverflow-wiki.git
       - name: 'Fix links'
         run: |
           find . -type f -name "*.md" -exec sed -i 's:\[\([^\n]\+\)\](\([^ \n]\+/\)*\([^ \n/]\+\)\.md\(#[^ \n/]\+\)\?):[\1](\3\4):g' {} +
@@ -31,6 +28,6 @@ jobs:
           GH_PAT: ${{ secrets.GH_PAT }}
         run: |
           git commit --message "Deploy wiki with Github Actions"
-          git push --force https://${GH_PAT}@github.com/codeoverflow-org/chatoverflow.wiki.git master
+          git push --force https://${GH_PAT}@github.com/codeoverflow-org/chatoverflow.wiki.git HEAD:master
 
 # This file is not included in the wiki.
