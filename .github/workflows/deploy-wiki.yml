@@ -28,6 +28,6 @@ jobs:
           GH_PAT: ${{ secrets.GH_PAT }}
         run: |
           git commit --message "Deploy wiki with Github Actions"
-          git push --force https://${GH_PAT}@github.com/codeoverflow-org/chatoverflow.wiki.git master
+          git push --force https://${GH_PAT}@github.com/codeoverflow-org/chatoverflow.wiki.git HEAD:master
 
 # This file is not included in the wiki.
