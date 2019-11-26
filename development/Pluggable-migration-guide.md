@@ -1,6 +1,6 @@
-If you have updated from 0.2-prealpha to 0.3-prealpha you might notice that your plugins aren't detected by the framework anymore and are also not included in `plugins.sbt` by the sbt fetch task.
+If you have updated from prealpha 2 to prealpha 3 you might notice that your plugins aren't detected by the framework anymore and are also not included in `plugins.sbt` by the sbt fetch task.
 
-This is because as of 0.3-prealpha `Pluggable` got removed and replaced with a xml file called `plugin.xml` in the resources of the plugin. Check the issue at [codeoverflow-org/chatoverflow#41](https://github.com/codeoverflow-org/chatoverflow/issues/41) or the pr at [codeoverflow-org/chatoverflow#91](https://github.com/codeoverflow-org/chatoverflow/pull/91) for more information about this rework.
+This is because as of 3.0.0-prealpha `Pluggable` got removed and replaced with a xml file called `plugin.xml` in the resources of the plugin. Check the issue at [codeoverflow-org/chatoverflow#41](https://github.com/codeoverflow-org/chatoverflow/issues/41) or the pr at [codeoverflow-org/chatoverflow#91](https://github.com/codeoverflow-org/chatoverflow/pull/91) for more information about this rework.
 
 Here are the required steps to make your plugin compatible with the new format:
 
