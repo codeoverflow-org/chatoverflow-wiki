@@ -12,10 +12,12 @@ Google will help you to find out if your game has it and how you can activate it
 The IPv4 address or domain of your game server.
 
 ### `password` _(required)_
-The password for accessing your servers RCON socket
+The password for accessing your servers RCON socket.  
+It is defined somewhere in your servers configuration (different for each game, google will help you).
 
 ### `port` _(optional)_
-The port on which the RCON socket runs.
+The port on which the RCON socket runs.  
+It is defined somewhere in your servers configuration (different for each game, google will help you).
 
 ## Plugin development with RCON Output
 Have a look at this simple plugin that says hello to all players on a minecraft server using rcon:
