@@ -2,6 +2,8 @@ We use a npm package to connect the REST-API to our web client. The package is g
 
 This article describes, how new versions of the package with the client bindings can be generated and published. This is important for team members and everyone interested in (G)UI development.
 
+This task should be usually be handled by a GitHub Action that publishes the npm package once you update the version of the rest interface in the [VersionInfo.scala file](https://github.com/codeoverflow-org/chatoverflow/blob/develop/src/main/scala/org/codeoverflow/chatoverflow/VersionInfo.scala) in a commit inside the official repository. You can check whether it was successful on the actions tab in the main repository. If it was successful you can directly use the published package by bumping the version number of it in the `package.json` of the gui. In case the action isn't working or if you want to publish the package to your fork you can follow the instructions in this article.
+
 ## Prerequisites
 
 There are three basic steps for settings started with this process.

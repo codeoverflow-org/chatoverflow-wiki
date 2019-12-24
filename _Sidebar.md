@@ -21,10 +21,11 @@
 3. [Adding a new platform source](development/Adding-a-new-platform-source.md)  
 4. [Deploy ChatOverflow](development/Deploy-ChatOverflow.md)
 5. [Working with NPM](development/Working-with-NPM.md)
-6. [Structure](development/Structure.md)
-7. [Versioning](development/Versioning.md)
-8. [Releasing](development/Release-ChatOverflow.md)
-9. [Pluggable migration guide](development/Pluggable-migration-guide.md)
+6. [Publish maven packages](development/Publish-maven-packages.md)
+7. [Structure](development/Structure.md)
+8. [Versioning](development/Versioning.md)
+9. [Releasing](development/Release-ChatOverflow.md)
+10. [Pluggable migration guide](development/Pluggable-migration-guide.md)
 
 **Services:**
 1. [Twitch Chat](services/Twitch-Chat.md)
