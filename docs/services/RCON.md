@@ -24,7 +24,7 @@ Have a look at this simple plugin that says hello to all players on a minecraft 
 
 For more information have a look at the [javadoc](http://docs.codeoverflow.org/chatoverflow-api/org/codeoverflow/chatoverflow/api/io/input/RconOutput.html).
 
-```java linenums="1" tab=
+```java tab=
 
 import org.codeoverflow.chatoverflow.api.plugin.configuration.Requirement;
 import org.codeoverflow.chatoverflow.api.io.input.RconOutput;
@@ -62,7 +62,7 @@ If you want to also get the response of a command have a look at this simple plu
 
 For more information have a look at the [javadoc](http://docs.codeoverflow.org/chatoverflow-api/org/codeoverflow/chatoverflow/api/io/input/RconInput.html).
 
-```java linenums="1" tab=
+```java tab=
 
 import org.codeoverflow.chatoverflow.api.plugin.configuration.Requirement;
 import org.codeoverflow.chatoverflow.api.io.input.RconInput;

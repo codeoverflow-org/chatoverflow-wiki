@@ -21,7 +21,7 @@ Have a look at this simple sample plugin:
 
 For more information have a look at the [javadoc](http://docs.codeoverflow.org/chatoverflow-api/org/codeoverflow/chatoverflow/api/io/input/SampleInput.html).
 
-```java linenums="1" tab=
+```java tab=
 
 import org.codeoverflow.chatoverflow.api.plugin.configuration.Requirement;
 import org.codeoverflow.chatoverflow.api.io.input.SampleInput;

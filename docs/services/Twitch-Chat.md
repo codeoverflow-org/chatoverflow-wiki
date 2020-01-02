@@ -21,7 +21,7 @@ Have a look at this simple example plugin that uses an event handler to log all 
 
 For more information have a look at the [javadoc](http://docs.codeoverflow.org/chatoverflow-api/org/codeoverflow/chatoverflow/api/io/input/chat/TwitchChatInput.html).
 
-```java linenums="1" tab=
+```java tab=
 import java.util.function.Consumer;
 import java.util.List;
 
@@ -85,7 +85,7 @@ Have a look at this simple example plugin that posts the current time to the cha
 
 For more information have a look at the [javadoc](http://docs.codeoverflow.org/chatoverflow-api/org/codeoverflow/chatoverflow/api/io/output/chat/TwitchChatOutput.html).
 
-```java linenums="1" tab=
+```java tab=
 import java.util.function.Consumer;
 import java.util.List;
 import java.time.LocalTime;
