@@ -100,8 +100,13 @@ a footnote-ref::before {
     transition-duration: 0.25s, 0.25s;
     transition-timing-function: ease, ease;
     transition-delay: 0s, 0s;
-    color: rgba(240,240,240,.07);
+    color: #FF7A04; //Copy button was not properly visible, adjusted color
     content: "\E14D";
+}
+
+.md-clipboard__message {
+    color: #FF7A04; //Toolip text was not properly visible, adjusted color 
+    background: rgba(0, 0, 0, .7);
 }
 
 .md-typeset .superfences-tabs {
