@@ -40,14 +40,14 @@ jobs:
         run: |
           find . -type f -name "*.md" -exec sed -i 's:\[\([^][\n]*\)\](/docs/\([^ \n()]\+\)):[\1](/\2):g' {} +
           find . -type f -name "*.md" -exec sed -i 's:<img\([^>\n]* src *= *\)"/docs/\([^ >\n]\+\)"\([^>\n]*\)>:<img\1"/chatoverflow-gh-pages/\2"\3>:g' {} +
+      - name: Copy java & scaladoc
+        run: |
+          mkdir docs/code
+          cp -r gh-pages/chatoverflow-api docs/code/chatoverflow-api
+          cp -r gh-pages/chatoverflow docs/code/chatoverflow
       - name: Build docs
         run: |
           mkdocs build --clean
-      - name: Copy java & scaladoc
-        run: |
-          mkdir site/code
-          cp -r gh-pages/chatoverflow-api site/code/chatoverflow-api
-          cp -r gh-pages/chatoverflow site/code/chatoverflow
       - name: Deploy
         uses: docker://peaceiris/gh-pages:v2
         env:
