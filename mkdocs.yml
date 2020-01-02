@@ -50,7 +50,7 @@ nav:
   - Services:
      - Twitch Chat: services/Twitch-Chat.md
      - Discord: services/Discord.md
-     - Serial Port (Arduino: services/Serial.md
+     - Serial Port (Arduino): services/Serial.md
      - TipeeeStream: services/TipeeeStream.md
      - StreamElements: services/StreamElements.md
      - File: services/File.md
