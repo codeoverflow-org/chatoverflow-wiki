@@ -10,7 +10,11 @@ jobs:
 #    if: startsWith(github.repository, 'codeoverflow-org') # don't run this in forks
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v2
+      - uses: actions/checkout@v2
+        with:
+          repository: codeoverflow-org/chatoverflow-gh-pages
+          path: gh-pages
       - uses: actions/setup-python@v1
         with:
           python-version: 3.8
@@ -39,6 +43,11 @@ jobs:
       - name: Build docs
         run: |
           mkdocs build --clean
+      - name: Copy java & scaladoc
+        run: |
+          mkdir site/code
+          cp -r gh-pages/chatoverflow-api site/code/chatoverflow-api
+          cp -r gh-pages/chatoverflow site/code/chatoverflow
       - name: Deploy
         uses: docker://peaceiris/gh-pages:v2
         env:

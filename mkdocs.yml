@@ -60,3 +60,5 @@ nav:
      - File: services/File.md
      - RCON: services/RCON.md
      - Sample: services/Sample.md
+  - Framework Scaladoc: code/chatoverflow/
+  - Framework Javadoc: code/chatoveflow-api/
