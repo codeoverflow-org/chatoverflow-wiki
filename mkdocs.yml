@@ -18,6 +18,9 @@ theme:
 markdown_extensions:
   - codehilite:
       linenums: true
+      noclasses: true
+      use_pygments: true
+      pygments_style: monokai
   - toc:
       permalink: true
   - pymdownx.superfences
@@ -28,6 +31,9 @@ markdown_extensions:
 plugins:
   - search
   - abs-to-rel
+
+extra_css:
+  - 'stylesheets/dark-theme.css'
 
 nav: 
   - Home: index.md
