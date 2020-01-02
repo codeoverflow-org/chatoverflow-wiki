@@ -20,36 +20,37 @@ Otherwise this section should list all required credentials and show how to obta
 Have a look at this simple sample plugin:
 
 For more information have a look at the [javadoc](http://docs.codeoverflow.org/chatoverflow-api/org/codeoverflow/chatoverflow/api/io/input/SampleInput.html).
-
-```java tab=
-
-import org.codeoverflow.chatoverflow.api.plugin.configuration.Requirement;
-import org.codeoverflow.chatoverflow.api.io.input.SampleInput;
-import org.codeoverflow.chatoverflow.api.plugin.PluginImpl;
-import org.codeoverflow.chatoverflow.api.plugin.PluginManager;
-
-public class TestPlugin extends PluginImpl {
-    //require a new sample input
-    private Requirement<SampleInput> sample = 
-        require.input.sample("sample", "Some description", false);
+!!! example 
     
-    public TestPlugin(PluginManager pluginManager) {
-        super(pluginManager);
-    }
+    ```java tab=
     
-    @Override
-    public void setup() {
-        //some code that shows of the general usage of the service here
-        //...
-
-    }
+    import org.codeoverflow.chatoverflow.api.plugin.configuration.Requirement;
+    import org.codeoverflow.chatoverflow.api.io.input.SampleInput;
+    import org.codeoverflow.chatoverflow.api.plugin.PluginImpl;
+    import org.codeoverflow.chatoverflow.api.plugin.PluginManager;
     
-    @Override
-    public void loop() {}
-     
-     @Override 
-     public void shutdown() {
-         log("Shutdown!");
+    public class TestPlugin extends PluginImpl {
+        //require a new sample input
+        private Requirement<SampleInput> sample = 
+            require.input.sample("sample", "Some description", false);
+        
+        public TestPlugin(PluginManager pluginManager) {
+            super(pluginManager);
+        }
+        
+        @Override
+        public void setup() {
+            //some code that shows of the general usage of the service here
+            //...
+    
+        }
+        
+        @Override
+        public void loop() {}
+         
+         @Override 
+         public void shutdown() {
+             log("Shutdown!");
+         }
      }
- }
-```
+    ```

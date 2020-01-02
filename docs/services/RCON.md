@@ -24,74 +24,78 @@ Have a look at this simple plugin that says hello to all players on a minecraft 
 
 For more information have a look at the [javadoc](http://docs.codeoverflow.org/chatoverflow-api/org/codeoverflow/chatoverflow/api/io/input/RconOutput.html).
 
-```java tab=
-
-import org.codeoverflow.chatoverflow.api.plugin.configuration.Requirement;
-import org.codeoverflow.chatoverflow.api.io.input.RconOutput;
-import org.codeoverflow.chatoverflow.api.plugin.PluginImpl;
-import org.codeoverflow.chatoverflow.api.plugin.PluginManager;
-
-public class TestPlugin extends PluginImpl {
-    //require a new rcon output
-    private Requirement<RconOutput> rcon = 
-        require.output.rcon("rcon", "Connect to a minecraft server using RCON", false);
+!!! example
     
-    public TestPlugin(PluginManager pluginManager) {
-        super(pluginManager);
-    }
+    ```java tab=
     
-    @Override
-    public void setup() {
-        //execute a command
-        rcon.get().sendCommand("say Hello World!");
-
-    }
+    import org.codeoverflow.chatoverflow.api.plugin.configuration.Requirement;
+    import org.codeoverflow.chatoverflow.api.io.input.RconOutput;
+    import org.codeoverflow.chatoverflow.api.plugin.PluginImpl;
+    import org.codeoverflow.chatoverflow.api.plugin.PluginManager;
     
-    @Override
-    public void loop() {}
-     
-     @Override 
-     public void shutdown() {
-         log("Shutdown!");
+    public class TestPlugin extends PluginImpl {
+        //require a new rcon output
+        private Requirement<RconOutput> rcon = 
+            require.output.rcon("rcon", "Connect to a minecraft server using RCON", false);
+        
+        public TestPlugin(PluginManager pluginManager) {
+            super(pluginManager);
+        }
+        
+        @Override
+        public void setup() {
+            //execute a command
+            rcon.get().sendCommand("say Hello World!");
+    
+        }
+        
+        @Override
+        public void loop() {}
+         
+         @Override 
+         public void shutdown() {
+             log("Shutdown!");
+         }
      }
- }
-```
+    ```
 
 ## Plugin development with RCON Input
 If you want to also get the response of a command have a look at this simple plugin:
 
 For more information have a look at the [javadoc](http://docs.codeoverflow.org/chatoverflow-api/org/codeoverflow/chatoverflow/api/io/input/RconInput.html).
 
-```java tab=
-
-import org.codeoverflow.chatoverflow.api.plugin.configuration.Requirement;
-import org.codeoverflow.chatoverflow.api.io.input.RconInput;
-import org.codeoverflow.chatoverflow.api.plugin.PluginImpl;
-import org.codeoverflow.chatoverflow.api.plugin.PluginManager;
-
-public class TestPlugin extends PluginImpl {
-    //require a new rcon input
-    private Requirement<RconInput> rcon = 
-        require.input.rcon("rcon", "Connect to a minecraft server using RCON", false);
+!!! example
     
-    public TestPlugin(PluginManager pluginManager) {
-        super(pluginManager);
-    }
+    ```java tab=
     
-    @Override
-    public void setup() {
-        //execute a command and log the response
-        String response = rcon.get().getCommandOutput("list");
-        log(response);
-
-    }
+    import org.codeoverflow.chatoverflow.api.plugin.configuration.Requirement;
+    import org.codeoverflow.chatoverflow.api.io.input.RconInput;
+    import org.codeoverflow.chatoverflow.api.plugin.PluginImpl;
+    import org.codeoverflow.chatoverflow.api.plugin.PluginManager;
     
-    @Override
-    public void loop() {}
-     
-     @Override 
-     public void shutdown() {
-         log("Shutdown!");
+    public class TestPlugin extends PluginImpl {
+        //require a new rcon input
+        private Requirement<RconInput> rcon = 
+            require.input.rcon("rcon", "Connect to a minecraft server using RCON", false);
+        
+        public TestPlugin(PluginManager pluginManager) {
+            super(pluginManager);
+        }
+        
+        @Override
+        public void setup() {
+            //execute a command and log the response
+            String response = rcon.get().getCommandOutput("list");
+            log(response);
+    
+        }
+        
+        @Override
+        public void loop() {}
+         
+         @Override 
+         public void shutdown() {
+             log("Shutdown!");
+         }
      }
- }
-```
+    ```

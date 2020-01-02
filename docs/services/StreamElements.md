@@ -27,49 +27,51 @@ For other event types just use the appropriate register method of the input. The
 
 For more information have a look at the [javadoc](http://docs.codeoverflow.org/chatoverflow-api/org/codeoverflow/chatoverflow/api/io/input/event/StreamElementsEventInput.html).
 
-```java tab=
-import java.util.function.Consumer;
-
-import org.codeoverflow.chatoverflow.api.plugin.configuration.Requirement;
-import org.codeoverflow.chatoverflow.api.io.input.event.StreamElementsEventInput;
-import org.codeoverflow.chatoverflow.api.plugin.PluginImpl;
-import org.codeoverflow.chatoverflow.api.plugin.PluginManager;
-import org.codeoverflow.chatoverflow.api.io.event.stream.streamelements.StreamElementsSubscriptionEvent;
-import org.codeoverflow.chatoverflow.api.io.dto.stat.stream.streamelements.StreamElementsSubscription;
-
-public class TestPlugin extends PluginImpl {
-    // require a StreamElements event input
-    private Requirement<StreamElementsEventInput> streamElementsIn = 
-        require.input.streamElements("streamElements", "Access to the StreamElements API", false);
+!!! example
     
-    public TestPlugin(PluginManager pluginManager) {
-        super(pluginManager);
-    }
+    ```java tab=
+    import java.util.function.Consumer;
     
-    @Override
-    public void setup() {
-        // register the subscription event handler that triggers if someone subscribes
-        streamElementsIn.get().registerSubscriptionEventHandler(new SubHandler());
-    }
+    import org.codeoverflow.chatoverflow.api.plugin.configuration.Requirement;
+    import org.codeoverflow.chatoverflow.api.io.input.event.StreamElementsEventInput;
+    import org.codeoverflow.chatoverflow.api.plugin.PluginImpl;
+    import org.codeoverflow.chatoverflow.api.plugin.PluginManager;
+    import org.codeoverflow.chatoverflow.api.io.event.stream.streamelements.StreamElementsSubscriptionEvent;
+    import org.codeoverflow.chatoverflow.api.io.dto.stat.stream.streamelements.StreamElementsSubscription;
     
-    @Override
-    public void loop() {
-    }
-     
-    @Override 
-    public void shutdown() {
-        log("Shutdown!");
-    }
-     
-    private class SubHandler implements Consumer<StreamElementsSubscriptionEvent> { 
-        @Override
-        public void accept(StreamElementsSubscriptionEvent event) {
-            StreamElementsSubscriptionEvent sub = event.getInfo();
-             
-            // Print information about the event to the log
-            log(sub.getSubscriber().getDisplayName() + " subscribed. Resub streak: " 
-                + sub.getResub());
+    public class TestPlugin extends PluginImpl {
+        // require a StreamElements event input
+        private Requirement<StreamElementsEventInput> streamElementsIn = 
+            require.input.streamElements("streamElements", "Access to the StreamElements API", false);
+        
+        public TestPlugin(PluginManager pluginManager) {
+            super(pluginManager);
         }
+        
+        @Override
+        public void setup() {
+            // register the subscription event handler that triggers if someone subscribes
+            streamElementsIn.get().registerSubscriptionEventHandler(new SubHandler());
+        }
+        
+        @Override
+        public void loop() {
+        }
+         
+        @Override 
+        public void shutdown() {
+            log("Shutdown!");
+        }
+         
+        private class SubHandler implements Consumer<StreamElementsSubscriptionEvent> { 
+            @Override
+            public void accept(StreamElementsSubscriptionEvent event) {
+                StreamElementsSubscriptionEvent sub = event.getInfo();
+                 
+                // Print information about the event to the log
+                log(sub.getSubscriber().getDisplayName() + " subscribed. Resub streak: " 
+                    + sub.getResub());
+            }
+         }
      }
- }
-```
+    ```

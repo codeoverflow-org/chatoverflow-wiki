@@ -42,116 +42,121 @@ Have a look at this simple example plugin that prints incoming data to log:
 
 For more information have a look at the [javadoc](http://docs.codeoverflow.org/chatoverflow-api/org/codeoverflow/chatoverflow/api/io/input/SerialInput.html).
 
-```java tab=
-import java.util.function.Consumer;
-
-import org.codeoverflow.chatoverflow.api.plugin.configuration.Requirement;
-import org.codeoverflow.chatoverflow.api.io.input.SerialInput;
-import org.codeoverflow.chatoverflow.api.io.event.serial.SerialDataAvailableEvent;
-import org.codeoverflow.chatoverflow.api.plugin.PluginImpl;
-import org.codeoverflow.chatoverflow.api.plugin.PluginManager;
-
-public class TestPlugin extends PluginImpl {
-    //require a new serial input
-    private Requirement<SerialInput> serialIn = 
-        require.input.serial("serialIn", "An arduino connected to the serial port", false);
+!!! example
     
-    public TestPlugin(PluginManager pluginManager) {
-        super(pluginManager);
-    }
+    ```java tab=
+    import java.util.function.Consumer;
     
-    @Override
-    public void setup() {
-        //register the message handler that reacts on incoming messages
-        serialIn.get().registerDataAvailableEventHandler(new DataHandler());
-    }
+    import org.codeoverflow.chatoverflow.api.plugin.configuration.Requirement;
+    import org.codeoverflow.chatoverflow.api.io.input.SerialInput;
+    import org.codeoverflow.chatoverflow.api.io.event.serial.SerialDataAvailableEvent;
+    import org.codeoverflow.chatoverflow.api.plugin.PluginImpl;
+    import org.codeoverflow.chatoverflow.api.plugin.PluginManager;
     
-    @Override
-    public void loop() {}
-     
-     @Override 
-     public void shutdown() {
-         log("Shutdown!");
-     }
-     
-     private class DataHandler implements Consumer<SerialDataAvailableEvent> {
+    public class TestPlugin extends PluginImpl {
+        //require a new serial input
+        private Requirement<SerialInput> serialIn = 
+            require.input.serial("serialIn", "An arduino connected to the serial port", false);
+        
+        public TestPlugin(PluginManager pluginManager) {
+            super(pluginManager);
+        }
+        
+        @Override
+        public void setup() {
+            //register the message handler that reacts on incoming messages
+            serialIn.get().registerDataAvailableEventHandler(new DataHandler());
+        }
+        
+        @Override
+        public void loop() {}
          
-         @Override
-         public void accept(SerialDataAvailableEvent event) {
-            //print the incoming string to the log
-            log("[Serial]" + event.getAsString());
+         @Override 
+         public void shutdown() {
+             log("Shutdown!");
+         }
+         
+         private class DataHandler implements Consumer<SerialDataAvailableEvent> {
+             
+             @Override
+             public void accept(SerialDataAvailableEvent event) {
+                //print the incoming string to the log
+                log("[Serial]" + event.getAsString());
+             }
          }
      }
- }
-```
+    ```
 
 ## Plugin development with Serial Output
 Have a look at this simple example plugin that sends `ping` to the connected device
 
 For more information have a look at the [javadoc](http://docs.codeoverflow.org/chatoverflow-api/org/codeoverflow/chatoverflow/api/io/output/SerialOutput.html).
 
-```java
-import java.util.function.Consumer;
-import java.util.List;
-import java.time.LocalTime;
-import java.time.format.DateTimeFormatter;
-
-import org.codeoverflow.chatoverflow.api.plugin.configuration.Requirement;
-import org.codeoverflow.chatoverflow.api.io.output.SerialOutput;
-import org.codeoverflow.chatoverflow.api.plugin.PluginImpl;
-import org.codeoverflow.chatoverflow.api.plugin.PluginManager;
-
-public class TestPlugin extends PluginImpl {
-    //require a new serial output
-    private Requirement<SerialOutput> serialOut = 
-        require.output.serial("serialOut", "An arduino connected to the serial port", false);
+!!! example
     
-    public TestPlugin(PluginManager pluginManager) {
-        super(pluginManager);
-        //Set the loop to repeat every 30 seconds (default 1 second)
-        loopInterval = 30 * 1000;
+    ```java
+    import java.util.function.Consumer;
+    import java.util.List;
+    import java.time.LocalTime;
+    import java.time.format.DateTimeFormatter;
+    
+    import org.codeoverflow.chatoverflow.api.plugin.configuration.Requirement;
+    import org.codeoverflow.chatoverflow.api.io.output.SerialOutput;
+    import org.codeoverflow.chatoverflow.api.plugin.PluginImpl;
+    import org.codeoverflow.chatoverflow.api.plugin.PluginManager;
+    
+    public class TestPlugin extends PluginImpl {
+        //require a new serial output
+        private Requirement<SerialOutput> serialOut = 
+            require.output.serial("serialOut", "An arduino connected to the serial port", false);
+        
+        public TestPlugin(PluginManager pluginManager) {
+            super(pluginManager);
+            //Set the loop to repeat every 30 seconds (default 1 second)
+            loopInterval = 30 * 1000;
+        }
+        
+        @Override
+        public void setup() {}
+        
+        @Override
+        public void loop() {
+            //Send ping to serial port
+            serialOut.getPrintStream().println("ping");
+         }
+         
+         @Override 
+         public void shutdown() {
+             log("Shutdown!");
+         }
     }
-    
-    @Override
-    public void setup() {}
-    
-    @Override
-    public void loop() {
-        //Send ping to serial port
-        serialOut.getPrintStream().println("ping");
-     }
-     
-     @Override 
-     public void shutdown() {
-         log("Shutdown!");
-     }
-}
-```
+    ```
 
 ### Example arduino script
 
-A simple ping-pong example script for your arduino.
-```cpp
-String inputString = "";     
-boolean stringComplete = false; 
-
-void setup() {
-    Serial.begin(9600);
-}
-
-// the loop routine runs over and over again forever
-void loop() {
-    while (Serial.available()) {
-        char inChar = (char)Serial.read();
-            inputString += inChar;
-            if (inChar == '\n') {
-            stringComplete = true;
+!!! example "A simple ping-pong example script for your arduino"
+    
+    ```cpp
+    String inputString = "";     
+    boolean stringComplete = false; 
+    
+    void setup() {
+        Serial.begin(9600);
+    }
+    
+    // the loop routine runs over and over again forever
+    void loop() {
+        while (Serial.available()) {
+            char inChar = (char)Serial.read();
+                inputString += inChar;
+                if (inChar == '\n') {
+                stringComplete = true;
+            }
         }
+        if (stringComplete) {
+            Serial.println("pong");
+            stringComplete = false;
+        }
+      delay(1);        // delay in between reads for stability
     }
-    if (stringComplete) {
-        Serial.println("pong");
-        stringComplete = false;
-    }
-  delay(1);        // delay in between reads for stability
-}
-```
+    ```
