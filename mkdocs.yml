@@ -11,9 +11,6 @@ theme:
   name: material
   feature:
     tabs: true
-  palette:
-    primary: orange
-    accent: orange
 
 markdown_extensions:
   - codehilite:
@@ -33,6 +30,7 @@ plugins:
 
 extra_css:
   - 'stylesheets/dark-theme.css'
+  - 'stylesheets/custom-header.css'
 
 nav: 
   - Home: index.md

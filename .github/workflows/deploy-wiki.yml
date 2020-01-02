@@ -27,6 +27,11 @@ jobs:
         with:
           source: docs/stylesheets/dark-theme.scss
           destination: docs/stylesheets/dark-theme.css
+      - name: Build custom-header.css
+        uses: gha-utilities/sass-build@v0.1.0
+        with:
+          source: docs/stylesheets/custom-header.scss
+          destination: docs/stylesheets/custom-header.css
       - name: 'Fix links' #strip '/docs' from all relative links
         run: |
           find . -type f -name "*.md" -exec sed -i 's:\[\([^][\n]*\)\](/docs/\([^ \n()]\+\)):[\1](/\2):g' {} +

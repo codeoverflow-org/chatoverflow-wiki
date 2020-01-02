@@ -1,5 +1,5 @@
 $link_color: #FF7A04;
-$header_background: #000;
+$header_background: #FF7A04;
 $background_color1: #2B2B2B;
 $background_color2: #1E2022;
 $navbar_header_background: $link_color;
@@ -20,10 +20,6 @@ $navbar_header_background: $link_color;
 	html .md-nav--primary .md-nav__title {
 		background-color: $navbar_header_background;
 	}
-}
-
-.md-header {
-	background-color: $header_background;
 }
 
 .md-container {
