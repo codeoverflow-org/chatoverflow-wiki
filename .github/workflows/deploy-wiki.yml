@@ -2,12 +2,11 @@ name: 'Deploy wiki'
 on:
   push:
     branches:
-      # - master
-      - feature/162-mkdocs
+      - master
 jobs:
   deploy_wiki:
     name: 'Deploy wiki'
-#    if: startsWith(github.repository, 'codeoverflow-org') # don't run this in forks
+    if: startsWith(github.repository, 'codeoverflow-org') # don't run this in forks
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -40,7 +39,7 @@ jobs:
       - name: 'Fix links' #strip '/docs' from all relative links
         run: |
           find . -type f -name "*.md" -exec sed -i 's:\[\([^][\n]*\)\](/docs/\([^ \n()]\+\)):[\1](/\2):g' {} +
-          find . -type f -name "*.md" -exec sed -i 's:<img\([^>\n]* src *= *\)"/docs/\([^ >\n]\+\)"\([^>\n]*\)>:<img\1"/chatoverflow-gh-pages/\2"\3>:g' {} +
+          find . -type f -name "*.md" -exec sed -i 's:<img\([^>\n]* src *= *\)"/docs/\([^ >\n]\+\)"\([^>\n]*\)>:<img\1"/\2"\3>:g' {} +
       - name: Copy java & scaladoc
         run: |
           mkdir docs/code
@@ -54,7 +53,7 @@ jobs:
         env:
           PERSONAL_TOKEN: ${{ secrets.GH_PAT }}
           PUBLISH_DIR: ./site
-          EXTERNAL_REPOSITORY: joblo2213/chatoverflow-gh-pages #codeoverflow-org/chatoverflow-gh-pages
+          EXTERNAL_REPOSITORY: codeoverflow-org/chatoverflow-gh-pages
           PUBLISH_BRANCH: master
 
 # This file is not included in the wiki.

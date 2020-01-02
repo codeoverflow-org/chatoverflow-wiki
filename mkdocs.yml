@@ -2,10 +2,10 @@ site_name: ChatOverflow Wiki
 site_author: codeoverflow.org
 copyright: '© 2019 codeoverflow.org CC-BY-SA-4.0'
 
-site_url: http://joblo2213.github.io/chatoverflow-gh-pages/
+site_url: http://docs.codeoverflow.org/
 repo_name: codeoverflow-org/chatoverflow
 repo_url: https://github.com/codeoverflow-org/chatoverflow/
-edit_uri: https://github.com/joblo2213/chatoverflow-wiki/edit/feature/162-mkdocs/docs/ #TODO: Point to codeoverflow-org master
+edit_uri: https://github.com/codeoverflow-org/chatoverflow-wiki/edit/master/docs/
 
 theme: 
   name: material
