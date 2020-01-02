@@ -21,7 +21,7 @@ For working on chatoverflow the following tools must be installed on your PC:
 
 4. Start developing!
 
-## UNIX operating systems (MacOs / Linux)
+## UNIX operating systems (MacOS / Linux)
 
 1. Save the [📄 install.sh](https://raw.githubusercontent.com/codeoverflow-org/chatoverflow-setup/master/install.sh) to the directory where you want to install the build environment.
 

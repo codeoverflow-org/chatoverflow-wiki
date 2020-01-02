@@ -22,7 +22,7 @@ A simple version of the `plugin.xml` file might look like this:
 
 !!! example
 
-     ```xml
+    ```xml
     <plugin>
         <name>Demonstration</name>
         <author>sebinside</author>
@@ -37,7 +37,7 @@ A simple version of the `plugin.xml` file might look like this:
         <bugtracker>https://github.com/codeoverflow-org/chatoverflow/issues</bugtracker>
         <license>EPL-2.0</license>
     </plugin>
-     ```
+    ```
 
 The properties called name, author, api versions and version are mandatory and the framework won't load the plugin, if one of these is missing. All others are optional information for the user. If you don't want to specify a value for those you can just omit them.
 
