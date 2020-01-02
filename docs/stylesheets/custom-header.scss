@@ -1,21 +1,5 @@
 $md-color-primary: #FF7A04;
 
-.md-header {
-  background-color: $md-color-primary;
-}
-
-.md-hero {
-  background-color: $md-color-primary;
-}
-
-.md-tabs {
-  background-color: $md-color-primary;
-}
-
-.md-source {
-  background-color: $md-color-primary;
-}
-
-.md-nav__source {
+.md-header, .md-hero, .md-tabs, .md-source, .md-nav__source {
   background-color: $md-color-primary;
 }
