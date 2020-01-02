@@ -1,4 +1,4 @@
-<p><img align="right" width="128" height="128" src="/img/services/file-material-icon.png"></p>
+<p><img align="right" width="128" height="128" src="/docs/img/services/file-material-icon.png"></p>
 
 The file service allows you to perform file operations that would otherwise be prohibited by the sandbox security manager.  
 It features easy ways to read, write or delete files and for managing subdirectories.  

@@ -1,4 +1,4 @@
-<p><img align="right" width="128" height="128" src="/img/services/sample-material-icon.png"></p>
+<p><img align="right" width="128" height="128" src="/docs/img/services/sample-material-icon.png"></p>
 
 The Sample service is just an example on how a connector should look like.
 And this wiki page is just an example how a wiki page for a connector should look like.
@@ -7,14 +7,14 @@ First you have a short description.
 
 The image in the upper right corner can be done with the following html in the first line of the page:
 ```html
-<p><img align="right" width="128" height="128" src="/img/services/sample-material-icon.png"></p>
+<p><img align="right" width="128" height="128" src="/docs/img/services/sample-material-icon.png"></p>
 ```
 The image should be uploaded to [img/services](https://github.com/codeoverflow-org/chatoverflow-wiki/tree/master/img/services).
 
 ## Credentials
 
 The sample service doesn't require any credentials.
-Otherwise this section should list all required credentials and show how to obtain them, see [discord service](Discord.md).
+Otherwise this section should list all required credentials and show how to obtain them, see [discord service](/docs/services/Discord.md).
 
 ## Plugin development with Sample Input
 Have a look at this simple sample plugin:

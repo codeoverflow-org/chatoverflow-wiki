@@ -101,4 +101,4 @@ twitchChatInput.get().registerMessageHandler(msg => println(msg))
 
 Of course, you can also add own classes and infrastructure by now - the important steps are done, happy coding!
 
-*One last note: If you are testing your plugin for the first time, a full reload might be needed. Use the custom task `[Advanced] Full Reload and run ChatOverflow` to do so. Afters this, you can configure the framework to start your plugin using the [CLI](usage/Using-the-CLI.md)!*
+*One last note: If you are testing your plugin for the first time, a full reload might be needed. Use the custom task `[Advanced] Full Reload and run ChatOverflow` to do so. Afters this, you can configure the framework to start your plugin using the [CLI](/docs/usage/Using-the-CLI.md)!*

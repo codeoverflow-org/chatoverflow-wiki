@@ -1,4 +1,4 @@
-<p><img align="right" src="/img/services/tipeeestream-logo.png"></p>
+<p><img align="right" src="/docs/img/services/tipeeestream-logo.png"></p>
 
 By using the TipeeeStream service you can react on donations, subscriptions and follows in your stream.  
 Just listen to the events provided by the TipeeeStream event input.
@@ -9,7 +9,7 @@ Just listen to the events provided by the TipeeeStream event input.
 Guess what: Your TipeeeStream username 😉.
 
 Just add a new credentials value with `username` as key and your username as value.  
-A guide can be found [here](/usage/Using-the-GUI.md#Set-credentials).
+A guide can be found [here](/docs/usage/Using-the-GUI.md#Set-credentials).
 
 ### `apiKey` _(required)_ 
 The key used for authentication to the TipeeeStream api. 
@@ -18,7 +18,7 @@ You find your key on https://www.tipeeestream.com/dashboard/api-key.
 
 Click on `Show`, copy the entire key, add it as a credentials value with the key `apikey` and you're done!
 
-![](/img/services/tipeeestream-apikey.png)
+![](/docs/img/services/tipeeestream-apikey.png)
 
 ## Plugin development with TipeeeStream Event Input
 This simple example plugin logs all Subscriptions:

@@ -5,7 +5,7 @@ copyright: '© 2019 codeoverflow.org CC-BY-SA-4.0'
 site_url: http://codeoverflow.org
 repo_name: codeoverflow-org/chatoverflow
 repo_url: https://github.com/codeoverflow-org/chatoverflow/
-edit_uri: https://github.com/joblo2213/chatoverflow-wiki/blob/feature/162-mkdocs/docs/ #TODO: Point to codeoverflow-org master
+edit_uri: https://github.com/joblo2213/chatoverflow-wiki/edit/feature/162-mkdocs/docs/ #TODO: Point to codeoverflow-org master
 
 theme: 
   name: material
@@ -41,7 +41,7 @@ nav:
      - Structure: development/Structure.md
      - Deploy ChatOverflow: development/Deploy-ChatOverflow.md
      - Working with NPM: development/Working-with-NPM.md
-     - Versioning: development/Versioning.m
+     - Versioning: development/Versioning.md
      - Releasing: development/Release-ChatOverflow.md
   - Services:
      - Twitch Chat: services/Twitch-Chat.md

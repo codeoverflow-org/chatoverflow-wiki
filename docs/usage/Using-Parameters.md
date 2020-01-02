@@ -1,16 +1,5 @@
 Plugin Developers can request custom input from a user using `Parameters`. There are currently the following prameters:
 
-1. [String Parameter](Using-Parameters.md#String-parameter)
-2. [Integer Parameter](Using-Parameters.md#Integer-parameter)
-3. [Double Parameter](Using-Parameters.md#Double-parameter)
-4. [Boolean Parameter](Using-Parameters.md#Boolean-parameter)
-5. [URI Parameter](Using-Parameters.md#URI-parameter)
-6. [Color Parameter](Using-Parameters.md#Color-parameter)
-7. [List Parameter](Using-Parameters.md#List-parameter)
-8. [Date Parameter](Using-Parameters.md#Date-parameter)
-9. [Time Parameter](Using-Parameters.md#Time-parameter)
-10. [Date Time Parameter](Using-Parameters.md#Date-Time-parameter)
-
 ## String parameter
 The string parameter requires you to enter a string. 
 

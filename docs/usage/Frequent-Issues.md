@@ -2,7 +2,7 @@
 Because of the differences in IntelliJ versions the run configurations could be broken. If they are broken, change the `classpath or module` setting in `Edit configurations...` to ChatOverflow root module (`chatoverflow`). Now everything should be working fine again.
 
 ## Credentials value encrypted with wrong auth key
-![](/img/usage/value-encrypted-wrong-key.png)  
+![](/docs/img/usage/value-encrypted-wrong-key.png)  
 ```
 ERROR configuration.CryptoUtil$  - Your environment does not work with AES256.Please update your Java runtime version to at least: 1.8.0_161
 ```
@@ -16,5 +16,5 @@ A common problem is the message "GUI couldn't be found on the classpath! Has the
 
 Solution: Use the *Refresh sbt project* button, inside IntelliJ. This should make IntelliJ find, load and start the GUI component. It can be found inside the sbt overlay window:
 
-![](/img/usage/refresh-sbt.png)  
+![](/docs/img/usage/refresh-sbt.png)  
 

@@ -1,4 +1,4 @@
-<p><img align="right" width="128" height="54" src="/img/services/serial-arduino-logo.png"></p>
+<p><img align="right" width="128" height="54" src="/docs/img/services/serial-arduino-logo.png"></p>
 
 The Serial service allows you to communicate with a device that is connected to your PC over a serial port.  
 
@@ -13,7 +13,7 @@ The serial port you want to communicate with. Finding the right port is differen
 **Windows:**
 1. Open Device Manager, and expand the Ports (COM & LPT) list  
 2. Note the port name between the braces (e.g. `COM3`)  
-  ![](/img/services/serial-ports.png/)
+  ![](/docs/img/services/serial-ports.png/)
 
 **Mac:**  
 1. Open terminal and type: 

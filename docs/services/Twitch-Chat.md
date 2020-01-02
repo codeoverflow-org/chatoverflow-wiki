@@ -1,4 +1,4 @@
-<p><img align="right" width="128" height="128" src="/img/services/twitch-glitch.png"></p>  
+<p><img align="right" width="128" height="128" src="/docs/img/services/twitch-glitch.png"></p>  
 
 The Twitch chat service allows plugins to connect to a channels chat by using IRC.  
 
@@ -12,7 +12,7 @@ The authentication token for accessing the Twitch IRC chat with your account.
 If you don't have such a token yet you can generate it on  https://twitchapps.com/tmi/.
 
 Just log into your Twitch account and copy the token.  
-Then add it as a credentials value with the key `oauth` as described [here](/usage/Using-the-GUI.md#Set-credentials).
+Then add it as a credentials value with the key `oauth` as described [here](/docs/usage/Using-the-GUI.md#Set-credentials).
 
 _Note: Copy the entire key **including** the `oauth:` at the beginning._
 

@@ -1,4 +1,4 @@
-<p><img align="right" width="200" height="51" src="/img/services/streamelements-logo.png"></p>
+<p><img align="right" width="200" height="51" src="/docs/img/services/streamelements-logo.png"></p>
 
 By using the StreamElements service you can react on donations, subscriptions and follows in your stream. 
 
@@ -11,7 +11,7 @@ You find your JWT at https://streamelements.com/dashboard/account/channels.
 
 Click on `Show Secrets`, copy the entire key labeled `JWT Token`, add it as a credentials value with the key `jwt-token` and you're done!
 
-![](/img/services/streamelements-token.png)
+![](/docs/img/services/streamelements-token.png)
 
 ## Plugin development with the StreamElements Event Input
 This simple example plugin logs all Subscriptions:

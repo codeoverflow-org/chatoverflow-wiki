@@ -1,4 +1,4 @@
-Chat overflow may be configured using the CLI. While running, the easiest way to control everything is the [**Better REPL**](Using-the-GUI.md), accessible through `http://localhost:2400`.
+Chat overflow may be configured using the CLI. While running, the easiest way to control everything is the [**Better REPL**](/docs/usage/Using-the-GUI.md), accessible through `http://localhost:2400`.
 
 ## Command Line Interface
 

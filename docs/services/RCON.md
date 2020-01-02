@@ -1,4 +1,4 @@
-<p><img align="right" width="128" height="128" src="/img/services/rcon-material-icon.png"></p>
+<p><img align="right" width="128" height="128" src="/docs/img/services/rcon-material-icon.png"></p>
 
 The RCON service can be used to execute commands on a game server using the [Source RCON Protocol](https://developer.valvesoftware.com/wiki/Source_RCON_Protocol).
 
