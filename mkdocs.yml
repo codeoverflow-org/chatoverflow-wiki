@@ -64,6 +64,6 @@ nav:
      - RCON: services/RCON.md
      - Sample: services/Sample.md
   - Framework Scaladoc:
-     - Framework Scaladoc: /chatoverflow-gh-pages/code/chatoverflow/
+     - Framework Scaladoc: /chatoverflow-gh-pages/code/chatoverflow/org/codeoverflow/chatoverflow/
   - API Javadoc:
-     - API Javadoc: /chatoverflow-gh-pages/code/chatoverflow-api/
+     - API Javadoc: /chatoverflow-gh-pages/code/chatoverflow-api/?help-doc.html
