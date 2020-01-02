@@ -23,7 +23,7 @@ Then head over to the bot page and add a bot:
 
 ![](/docs/img/services/discord-build-a-bot.png)
 
-Now you can retrieve the authentication token, click on copy and [add it as a credentials value](/docs/usage/Using-the-GUI.md#Set-credentials) using the GUI.
+Now you can retrieve the authentication token, click on copy and [add it as a credentials value](/docs/usage/Using-the-GUI.md#set-credentials) using the GUI.
 
 ![](/docs/img/services/discord-bot-token.png)
 

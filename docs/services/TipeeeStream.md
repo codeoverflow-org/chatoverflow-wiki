@@ -9,7 +9,7 @@ Just listen to the events provided by the TipeeeStream event input.
 Guess what: Your TipeeeStream username 😉.
 
 Just add a new credentials value with `username` as key and your username as value.  
-A guide can be found [here](/docs/usage/Using-the-GUI.md#Set-credentials).
+A guide can be found [here](/docs/usage/Using-the-GUI.md#set-credentials).
 
 ### `apiKey` _(required)_ 
 The key used for authentication to the TipeeeStream api. 

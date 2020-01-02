@@ -63,7 +63,7 @@ Use the blue pen to copy the key, the identifier and the type of the connector a
 ![](/docs/img/usage/credentials.png)
 
 
-If you are getting errors when adding credentials [Frequent-Issues](/docs/usage/Frequent-Issues.md#Credentials-value-encrypted-with-wrong-auth-key) might contain a solution.
+If you are getting errors when adding credentials [Frequent-Issues](/docs/usage/Frequent-Issues.md#credentials-value-encrypted-with-wrong-auth-key) might contain a solution.
 
 *Please note: Added credentials are encrypted with AES 128/256. The password is not stored anywhere. If you loose your password, there will be no way to reuse your configured and saved credentials.*
 

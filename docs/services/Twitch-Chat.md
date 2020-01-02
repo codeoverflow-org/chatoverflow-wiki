@@ -12,7 +12,7 @@ The authentication token for accessing the Twitch IRC chat with your account.
 If you don't have such a token yet you can generate it on  https://twitchapps.com/tmi/.
 
 Just log into your Twitch account and copy the token.  
-Then add it as a credentials value with the key `oauth` as described [here](/docs/usage/Using-the-GUI.md#Set-credentials).
+Then add it as a credentials value with the key `oauth` as described [here](/docs/usage/Using-the-GUI.md#set-credentials).
 
 _Note: Copy the entire key **including** the `oauth:` at the beginning._
 
