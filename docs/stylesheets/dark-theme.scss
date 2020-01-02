@@ -109,6 +109,10 @@ a footnote-ref::before {
     background: rgba(0, 0, 0, .7);
 }
 
+.md-typeset .md-content__icon {
+    color: #FF7A04; //Changed color of the edit page icon
+}
+
 .md-typeset .superfences-tabs {
     background-color: $background_color2;
 }
