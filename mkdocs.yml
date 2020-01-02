@@ -9,8 +9,6 @@ edit_uri: https://github.com/joblo2213/chatoverflow-wiki/edit/feature/162-mkdocs
 
 theme: 
   name: material
-  logo:
-    icon: menu_book
   feature:
     tabs: true
 
