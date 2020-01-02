@@ -23,7 +23,8 @@ It is defined somewhere in your servers configuration (different for each game, 
 Have a look at this simple plugin that says hello to all players on a minecraft server using rcon:
 
 For more information have a look at the [javadoc](http://docs.codeoverflow.org/chatoverflow-api/org/codeoverflow/chatoverflow/api/io/input/RconOutput.html).
-```java
+
+```java linenums="1" tab=
 
 import org.codeoverflow.chatoverflow.api.plugin.configuration.Requirement;
 import org.codeoverflow.chatoverflow.api.io.input.RconOutput;
@@ -60,7 +61,8 @@ public class TestPlugin extends PluginImpl {
 If you want to also get the response of a command have a look at this simple plugin:
 
 For more information have a look at the [javadoc](http://docs.codeoverflow.org/chatoverflow-api/org/codeoverflow/chatoverflow/api/io/input/RconInput.html).
-```java
+
+```java linenums="1" tab=
 
 import org.codeoverflow.chatoverflow.api.plugin.configuration.Requirement;
 import org.codeoverflow.chatoverflow.api.io.input.RconInput;

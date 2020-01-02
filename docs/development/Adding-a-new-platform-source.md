@@ -26,7 +26,7 @@ Just use the helper impl classes `InputImpl` and `OutputImpl`
 
 With this connector, you can now implement the interfaces you just added to the API. E.g.
 
-```
+```scala tab=
 @Impl(impl = classOf[SampleInput], connector = classOf[SampleConnector])
 class SampleInputImpl extends InputImpl[SampleConnector] with SampleInput with WithLogger {
 

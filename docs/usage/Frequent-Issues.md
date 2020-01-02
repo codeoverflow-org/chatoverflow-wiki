@@ -3,6 +3,7 @@ Because of the differences in IntelliJ versions the run configurations could be 
 
 ## Credentials value encrypted with wrong auth key
 ![](/docs/img/usage/value-encrypted-wrong-key.png)  
+
 ```
 ERROR configuration.CryptoUtil$  - Your environment does not work with AES256.Please update your Java runtime version to at least: 1.8.0_161
 ```

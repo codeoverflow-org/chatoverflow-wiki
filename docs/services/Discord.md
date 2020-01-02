@@ -43,7 +43,8 @@ Now you only need to copy the link, follow it, login and add the bot!
 Have a look at this simple example plugin that uses an event handler to log all messages and displays the amount of messages every 5 seconds. It also logs if messages are edited, deleted and reactions are added.
 
 For more information have a look at the [javadoc](http://docs.codeoverflow.org/chatoverflow-api/org/codeoverflow/chatoverflow/api/io/input/chat/DiscordChatInput.html).
-```java
+
+```java linenums="1" tab=
 import java.util.function.Consumer;
 import java.util.List;
 
@@ -149,7 +150,7 @@ Have a look at this simple example plugin that posts the current time to the cha
 
 For more information have a look at the [javadoc](http://docs.codeoverflow.org/chatoverflow-api/org/codeoverflow/chatoverflow/api/io/output/chat/DiscordChatOutput.html).
 
-```java
+```java linenums="1" tab=
 import java.util.function.Consumer;
 import java.util.List;
 import java.time.LocalTime;

@@ -41,7 +41,8 @@ Default value is `9600`.
 Have a look at this simple example plugin that prints incoming data to log:
 
 For more information have a look at the [javadoc](http://docs.codeoverflow.org/chatoverflow-api/org/codeoverflow/chatoverflow/api/io/input/SerialInput.html).
-```java
+
+```java linenums="1" tab=
 import java.util.function.Consumer;
 
 import org.codeoverflow.chatoverflow.api.plugin.configuration.Requirement;

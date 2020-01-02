@@ -34,7 +34,8 @@ For working on chatoverflow the following tools must be installed on your PC:
 
 ### Alternative
 
-This command downloads the script and executes it:  
-```shell script
+This command downloads the script and executes it:
+  
+```shell
 bash <(curl -s https://raw.githubusercontent.com/codeoverflow-org/chatoverflow-setup/master/install.sh)
 ```

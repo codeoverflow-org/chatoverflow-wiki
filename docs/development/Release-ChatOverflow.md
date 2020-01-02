@@ -37,15 +37,15 @@ First, everything has to be prepared for a new release.
 
 After these steps, there is a merged and "tested" version of Chat Overflow available. Now, it's time to [deploy](/docs/development/Deploy-ChatOverflow.md):
 
-7. Use the `[Deploy]`-task to create a deployed version of the Chat Overflow project. Copy these files to a different directory. Then use the `[DeployDev]`-task to create a version of Chat Overflow for plugin developers. Do also copy this files to a different folder.
-8. For both environments / deployed versions, execute your copied versions and make sure, that everything is downloaded and starts correctly and all runtime files (e.g. the `config`-files) are generated.
-9. Return to your original, deployed versions. Zip them in separate files. Make sure to include all needed files but *none* of the generated files of your runtime versions (see [deploying](/docs/development/Deploy-ChatOverflow.md) for more information).
+1. Use the `[Deploy]`-task to create a deployed version of the Chat Overflow project. Copy these files to a different directory. Then use the `[DeployDev]`-task to create a version of Chat Overflow for plugin developers. Do also copy this files to a different folder.
+2. For both environments / deployed versions, execute your copied versions and make sure, that everything is downloaded and starts correctly and all runtime files (e.g. the `config`-files) are generated.
+3. Return to your original, deployed versions. Zip them in separate files. Make sure to include all needed files but *none* of the generated files of your runtime versions (see [deploying](/docs/development/Deploy-ChatOverflow.md) for more information).
 
 ## 3. Release
 
 With the two deployed versions of Chat Overflow, we are now ready to release!
 
-10. Upload the Chat Overflow API to the Github Maven Package Registry. For initial setup, create this file `~/.sbt/1.0/gpr-codeoverflow.sbt` with the following content:
+1. Upload the Chat Overflow API to the Github Maven Package Registry. For initial setup, create this file `~/.sbt/1.0/gpr-codeoverflow.sbt` with the following content:
 
     ```scala
     credentials += Credentials(
@@ -58,18 +58,18 @@ With the two deployed versions of Chat Overflow, we are now ready to release!
 
     Then, you can simply publish a new version (the version of the main api sbt file is used) by executing `sbt apiProject/publish`.
 
-11. Draft a new [release](https://github.com/codeoverflow-org/chatoverflow/releases). Set the `tag version` to the version to release (following the main sbt version) and the target to the `develop`-branch.
-12. Write release notes. These notes should at least contain the following information: Generic information, (major) changes, pull requests. Just have a look at existent [releases](https://github.com/codeoverflow-org/chatoverflow/releases).
-13. Upload both zip files with the deployed (and plugin-dev-deployed) versions of Chat Overflow.
-14. Double check again, that every step is completed and everything looks fine. Then, **release**!
+2. Draft a new [release](https://github.com/codeoverflow-org/chatoverflow/releases). Set the `tag version` to the version to release (following the main sbt version) and the target to the `develop`-branch.
+3. Write release notes. These notes should at least contain the following information: Generic information, (major) changes, pull requests. Just have a look at existent [releases](https://github.com/codeoverflow-org/chatoverflow/releases).
+4. Upload both zip files with the deployed (and plugin-dev-deployed) versions of Chat Overflow.
+5. Double check again, that every step is completed and everything looks fine. Then, **release**!
 
 ## 4. Post-Release
 
 After the release, some things have to be cleaned up.
 
-15. By releasing, the current state of the selected branch in the main project is automatically tagged with the release version, e.g. `v3.2.1`. All other current states of all other projects (e.g. API, GUI, and so on) have to be tagged, too.
-16. Merge the current states of all `develop`-branches in the `master`-branches, since these should always contain the currently released version. This should cause no problems though, because you already merged the `master`-branches in chapter 1. But it opens up new space for a new development version.
-17. Add a commit to all `develop`-branches, incrementing the version number. If the increment is *major* or *minor* has to be determined first.
-18. Delete all dead branches on all projects. This is applicable to all branches, which have been successfully merged into the `develop`- or `master`-branch and whose issue has been closed. If you're not sure about a branch, please ask first.
-19. That's it. Get yourself a cup of coffee, take a nap or cry in pain. A new version of Chat Overflow has been released, and it's time to start over again with the development of the next release. Thank you!
+1. By releasing, the current state of the selected branch in the main project is automatically tagged with the release version, e.g. `v3.2.1`. All other current states of all other projects (e.g. API, GUI, and so on) have to be tagged, too.
+2. Merge the current states of all `develop`-branches in the `master`-branches, since these should always contain the currently released version. This should cause no problems though, because you already merged the `master`-branches in chapter 1. But it opens up new space for a new development version.
+3. Add a commit to all `develop`-branches, incrementing the version number. If the increment is *major* or *minor* has to be determined first.
+4. Delete all dead branches on all projects. This is applicable to all branches, which have been successfully merged into the `develop`- or `master`-branch and whose issue has been closed. If you're not sure about a branch, please ask first.
+5. That's it. Get yourself a cup of coffee, take a nap or cry in pain. A new version of Chat Overflow has been released, and it's time to start over again with the development of the next release. Thank you!
 

@@ -20,7 +20,8 @@ Otherwise this section should list all required credentials and show how to obta
 Have a look at this simple sample plugin:
 
 For more information have a look at the [javadoc](http://docs.codeoverflow.org/chatoverflow-api/org/codeoverflow/chatoverflow/api/io/input/SampleInput.html).
-```java
+
+```java linenums="1" tab=
 
 import org.codeoverflow.chatoverflow.api.plugin.configuration.Requirement;
 import org.codeoverflow.chatoverflow.api.io.input.SampleInput;

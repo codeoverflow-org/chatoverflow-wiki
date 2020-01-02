@@ -34,13 +34,13 @@ For more information, please visit http://codeoverflow.org/
 
 You can also configure the paths of config- and credentials-files to create custom setups:
 
-```
+```shell
 -c customConfigFolder -p customPluginFolder
 ```
 
 The combination of logging in and starting plugins with one command is very useful for rapid prototyping.
 
-```
+```shell
 -l myPassword -s startupPluginInstance1,startupPluginInstance2
 ```
 
