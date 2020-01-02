@@ -26,6 +26,7 @@ jobs:
           pip install pygments
           pip install pygments
           pip install mkdocs-abs-rel-plugin
+          pip install mkdocs-git-revision-date-localized-plugin
       - name: Build dark-theme.css
         uses: gha-utilities/sass-build@v0.1.0
         with:

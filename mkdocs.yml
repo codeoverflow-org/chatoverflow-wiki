@@ -27,6 +27,8 @@ markdown_extensions:
 plugins:
   - search
   - abs-to-rel
+  - git-revision-date-localized:
+      type: datetime
 
 extra_css:
   - 'stylesheets/dark-theme.css'
