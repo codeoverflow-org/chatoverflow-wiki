@@ -1,6 +1,6 @@
 This short tutorial is meant for end users of ChatOverflow and shows how to install and run the framework with all dependencies.  
 If you want to set up a build environment for developing plugins or to contribute to the framework,
-head over to [Build Environment](development/Setting-up-the-Build-Environment.md).
+head over to [Build Environment](/docs/development/Setting-up-the-Build-Environment.md).
 
 ## Prerequisites
 

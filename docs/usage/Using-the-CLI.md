@@ -1,4 +1,4 @@
-Chat overflow may be configured using the CLI. While running, the easiest way to control everything is the [**Better REPL**](Using-the-GUI.md), accessible through `http://localhost:2400`.
+Chat overflow may be configured using the CLI. While running, the easiest way to control everything is the [**Better REPL**](/docs/usage/Using-the-GUI.md), accessible through `http://localhost:2400`.
 
 ## Command Line Interface
 
@@ -26,21 +26,22 @@ Usage: Chat Overflow [options]
 
 For more information, please visit http://codeoverflow.org/
 ```
-> ## Attention:
-> ### Currently there is a bug that prevents custom web server ports from working properly.
-> ### See [#149](https://github.com/codeoverflow-org/chatoverflow/issues/149).
+
+!!! bug
+    **Currently there is a bug that prevents custom web server ports from working properly.**
+    **See [#149](https://github.com/codeoverflow-org/chatoverflow/issues/149).**
 
 ## Configuration
 
 You can also configure the paths of config- and credentials-files to create custom setups:
 
-```
+```shell
 -c customConfigFolder -p customPluginFolder
 ```
 
 The combination of logging in and starting plugins with one command is very useful for rapid prototyping.
 
-```
+```shell
 -l myPassword -s startupPluginInstance1,startupPluginInstance2
 ```
 

@@ -1,5 +1,5 @@
 This short tutorial is meant for developers and shows how to setup the build environment.  
-If you want to install and run ChatOverflow head over to [Installation](usage/Installation.md).
+If you want to install and run ChatOverflow head over to [Installation](/docs/usage/Installation.md).
 
 ## Prerequisites
 
@@ -21,7 +21,7 @@ For working on chatoverflow the following tools must be installed on your PC:
 
 4. Start developing!
 
-## UNIX operating systems (MacOs / Linux)
+## UNIX operating systems (MacOS / Linux)
 
 1. Save the [📄 install.sh](https://raw.githubusercontent.com/codeoverflow-org/chatoverflow-setup/master/install.sh) to the directory where you want to install the build environment.
 
@@ -34,7 +34,8 @@ For working on chatoverflow the following tools must be installed on your PC:
 
 ### Alternative
 
-This command downloads the script and executes it: 
-```shell script
+This command downloads the script and executes it:
+  
+```shell
 bash <(curl -s https://raw.githubusercontent.com/codeoverflow-org/chatoverflow-setup/master/install.sh)
 ```

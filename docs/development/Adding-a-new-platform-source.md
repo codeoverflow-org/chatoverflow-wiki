@@ -26,7 +26,7 @@ Just use the helper impl classes `InputImpl` and `OutputImpl`
 
 With this connector, you can now implement the interfaces you just added to the API. E.g.
 
-```
+```scala tab=
 @Impl(impl = classOf[SampleInput], connector = classOf[SampleConnector])
 class SampleInputImpl extends InputImpl[SampleConnector] with SampleInput with WithLogger {
 
@@ -36,7 +36,9 @@ class SampleInputImpl extends InputImpl[SampleConnector] with SampleInput with W
 }
 ```
 
-**Important:** The @Impl-annotation will guide the framework to load your new connector and types.
+!!! important
+    
+    **The @Impl-annotation will guide the framework to load your new connector and types.**
 
 ## Metadata
 
@@ -44,15 +46,19 @@ To guide the user while adding new connectors / platform sources, we ask you to 
 
 Create a XML-file with the full name of your connector type, e.g. `org.codeoverflow.chatoverflow.requirement.service.discord.discordchatconnector.xml` inside the `main/resources/connector`-folder of the project. This file should contain the following information:
 
-```xml
-<connector>
-    <display>The Display Name</display>
-    <description>A short description</description>
-    <wiki>A link to the corresponding wiki entry</wiki>
-    <icon48>
-      a base64 encoded 48x48 png file
-    </icon48>
-</connector>
-```
+!!! example
+    
+    ```xml
+    <connector>
+        <display>The Display Name</display>
+        <description>A short description</description>
+        <wiki>A link to the corresponding wiki entry</wiki>
+        <icon48>
+          a base64 encoded 48x48 png file
+        </icon48>
+    </connector>
+    ```
 
-Note that this step is optional, but highly recommended.
+!!! note 
+    
+    This step is optional, but highly recommended.

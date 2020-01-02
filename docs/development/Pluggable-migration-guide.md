@@ -10,22 +10,23 @@ Here are the required steps to make your plugin compatible with the new format:
 
 3. Create a file at `yourPlugin/src/main/resources/plugin.xml` containing the following: 
 
-   ```xml
-   <plugin>
-       <name>myPluginName</name>
-       <author>sebinside</author>
-       <description>This is a simple plugin for demonstration purposes.</description>
-       <api>
-           <major>3</major>
-           <minor>0</minor>
-       </api>
-       <version>0.3.0</version>
-       <website>http://codeoverflow.org</website>
-       <sourceRepo>https://github.com/codeoverflow-org/chatoverflow-plugins</sourceRepo>
-       <bugtracker>https://github.com/codeoverflow-org/chatoverflow/issues</bugtracker>
-       <license>EPL-2.0</license>
-   </plugin>
-   ```
+    !!! example 
+        ```xml
+        <plugin>
+            <name>myPluginName</name>
+            <author>sebinside</author>
+            <description>This is a simple plugin for demonstration purposes.</description>
+            <api>
+                <major>3</major>
+                <minor>0</minor>
+            </api>
+            <version>0.3.0</version>
+            <website>http://codeoverflow.org</website>
+            <sourceRepo>https://github.com/codeoverflow-org/chatoverflow-plugins</sourceRepo>
+            <bugtracker>https://github.com/codeoverflow-org/chatoverflow/issues</bugtracker>
+            <license>EPL-2.0</license>
+        </plugin>
+        ```
 
 4. Replace these values with yours. Name, author, api and version are mandatory while the other ones aren't and can be omitted by remove the xml tag. Note that you also may need to adjust the api version numbers if you are running a newer version.
 
