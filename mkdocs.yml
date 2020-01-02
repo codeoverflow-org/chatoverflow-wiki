@@ -17,7 +17,6 @@ theme:
 
 markdown_extensions:
   - codehilite:
-      linenums: true
       noclasses: true
       use_pygments: true
       pygments_style: monokai
