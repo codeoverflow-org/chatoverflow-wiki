@@ -25,6 +25,10 @@ markdown_extensions:
       emoji_index: !!python/name:pymdownx.emoji.twemoji
       emoji_generator: !!python/name:pymdownx.emoji.to_svg
 
+plugins:
+  - search
+  - abs-to-rel
+
 nav: 
   - Home: index.md
   - Usage:

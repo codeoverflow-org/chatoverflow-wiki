@@ -14,12 +14,18 @@ jobs:
       - uses: actions/setup-python@v1
         with:
           python-version: 3.8
-      - name: Install mkdocs
+      - name: Install mkdocs with extensions, themes and plugins
         run: |
           pip install mkdocs
           pip install mkdocs-material
           pip install pymdown-extensions
           pip install pygments
+          pip install pygments
+          pip install mkdocs-abs-rel-plugin
+      - name: 'Fix links' #strip '/docs' from all relative links
+        run: |
+          find . -type f -name "*.md" -exec sed -i 's:\[\([^\n]\+\)\](/docs/\([^ \n)]\+\)):[\1](/\2):g' {} +
+          find . -type f -name "*.md" -exec sed -i 's:<img\([^>\n]* src *= *\)"/docs/\([^ >\n]\+\)"\([^>\n]*\)>:<img\1"/\2"\3>:g' {} +
       - name: Build docs
         run: |
           mkdocs build --clean
