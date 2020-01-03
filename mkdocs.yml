@@ -1,0 +1,71 @@
+site_name: ChatOverflow Wiki
+site_author: codeoverflow.org
+copyright: '© 2019 codeoverflow.org CC-BY-SA-4.0'
+
+site_url: http://docs.codeoverflow.org/
+repo_name: codeoverflow-org/chatoverflow
+repo_url: https://github.com/codeoverflow-org/chatoverflow/
+edit_uri: https://github.com/codeoverflow-org/chatoverflow-wiki/edit/master/docs/
+
+theme: 
+  name: material
+  feature:
+    tabs: true
+
+markdown_extensions:
+  - admonition
+  - codehilite:
+      noclasses: true
+      use_pygments: true
+      pygments_style: monokai
+  - toc:
+      permalink: true
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:pymdownx.emoji.twemoji
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+
+plugins:
+  - search
+  - abs-to-rel
+  - git-revision-date-localized:
+      type: datetime
+
+extra_css:
+  - 'stylesheets/dark-theme.css'
+  - 'stylesheets/custom-header.css'
+
+nav: 
+  - Home: index.md
+  - Usage:
+     - Installation: usage/Installation.md
+     - Using the GUI: usage/Using-the-GUI.md
+     - Using Parameters: usage/Using-Parameters.md
+     - Using the CLI: usage/Using-the-CLI.md
+     - Frequent Issues: usage/Frequent-Issues.md
+  - Development:
+     - Build Environment: development/Setting-up-the-Build-Environment.md
+     - Writing a plugin: development/Writing-a-plugin.md
+     - Pluggable migration guide: development/Pluggable-migration-guide.md
+     - Adding a new platform source: development/Adding-a-new-platform-source.md
+     - Structure: development/Structure.md
+     - Deploy ChatOverflow: development/Deploy-ChatOverflow.md
+     - Working with NPM: development/Working-with-NPM.md
+     - Versioning: development/Versioning.md
+     - Releasing: development/Release-ChatOverflow.md
+     - Publish maven Package: development/Publish-maven-packages.md
+  - Services:
+     - Twitch Chat: services/Twitch-Chat.md
+     - Discord: services/Discord.md
+     - Serial Port (Arduino): services/Serial.md
+     - TipeeeStream: services/TipeeeStream.md
+     - StreamElements: services/StreamElements.md
+     - File: services/File.md
+     - RCON: services/RCON.md
+     - Sample: services/Sample.md
+  - Framework Scaladoc:
+     - Framework Scaladoc: /code/chatoverflow/org/codeoverflow/chatoverflow/
+  - API Javadoc:
+     - API Javadoc: /code/chatoverflow-api/?help-doc.html
+  - Contribute to the Wiki: https://github.com/codeoverflow-org/chatoverflow-wiki/

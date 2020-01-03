@@ -9,26 +9,36 @@ jobs:
     if: startsWith(github.repository, 'codeoverflow-org') # don't run this in forks
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
-      - name: 'Configure git user '
-        run: |
-          git config user.email "<>"
-          git config user.name "Github Actions"
+      - uses: actions/checkout@v2
+      - uses: actions/checkout@v2
+        with:
+          repository: codeoverflow-org/chatoverflow-gh-pages
+          path: gh-pages
+      - uses: actions/setup-python@v1
+        with:
+          python-version: 3.8
+      - name: Install requirements
+        run: pip install -r requirements.txt
+      - name: Build dark-theme.css
+        uses: gha-utilities/sass-build@v0.1.0
+        with:
+          source: docs/stylesheets/dark-theme.scss
+          destination: docs/stylesheets/dark-theme.css
+      - name: Build custom-header.css
+        uses: gha-utilities/sass-build@v0.1.0
+        with:
+          source: docs/stylesheets/custom-header.scss
+          destination: docs/stylesheets/custom-header.css
       - name: 'Fix links'
-        run: |
-          find . -type f -name "*.md" -exec sed -i 's:\[\([^\n]\+\)\](\([^ \n]\+/\)*\([^ \n/]\+\)\.md\(#[^ \n/]\+\)\?):[\1](\3\4):g' {} +
-          find . -type f -name "*.md" -exec sed -i 's:\[\([^\n]*\)\](/\([^ \n]\+\)):[\1](\2):g' {} +
-          find . -type f -name "*.md" -exec sed -i 's:<img\([^>\n]* src *= *\)"/\([^ >\n]\+\)"\([^>\n]*\)>:<img\1"\2"\3>:g' {} +
-          git add .
-      - name: 'Exclude files'
-        run: |
-          git rm README.md --cached
-          git rm .github -r --cached
-      - name: 'Commit & Push'
+        run: bash .scripts/fix-links.sh
+      - name: Build docs
+        run: mkdocs build --clean
+      - name: Copy preserved files
+        run: bash .scripts/copy-preserved.sh
+      - name: Deploy
+        uses: docker://peaceiris/gh-pages:v2
         env:
-          GH_PAT: ${{ secrets.GH_PAT }}
-        run: |
-          git commit --message "Deploy wiki with Github Actions"
-          git push --force https://${GH_PAT}@github.com/codeoverflow-org/chatoverflow.wiki.git HEAD:master
-
-# This file is not included in the wiki.
+          PERSONAL_TOKEN: ${{ secrets.GH_PAT }}
+          PUBLISH_DIR: ./site
+          EXTERNAL_REPOSITORY: codeoverflow-org/chatoverflow-gh-pages
+          PUBLISH_BRANCH: master
