@@ -38,7 +38,7 @@ jobs:
       - name: Deploy
         uses: docker://peaceiris/gh-pages:v2
         env:
-          PERSONAL_TOKEN: ${{ secrets.GH_PAT }}
+          ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           PUBLISH_DIR: ./site
           EXTERNAL_REPOSITORY: codeoverflow-org/chatoverflow-gh-pages
           PUBLISH_BRANCH: master
