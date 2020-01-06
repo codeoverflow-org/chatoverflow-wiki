@@ -9,6 +9,7 @@ edit_uri: https://github.com/codeoverflow-org/chatoverflow-wiki/edit/master/docs
 
 theme: 
   name: material
+  font: false
   feature:
     tabs: true
 
@@ -33,6 +34,7 @@ plugins:
       type: datetime
 
 extra_css:
+  - 'stylesheets/fonts.css'
   - 'stylesheets/dark-theme.css'
   - 'stylesheets/custom-header.css'
 

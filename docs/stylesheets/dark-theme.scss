@@ -1,9 +1,10 @@
-$link_color: #FF7A04;
-$header_background: #FF7A04;
+$accent: #FF7A04;
+
+$link_color: $accent;
+$header_background: $accent;
 $background_color1: #2B2B2B;
 $background_color2: #1E2022;
-$navbar_header_background: $link_color;
-
+$navbar_header_background: $accent;
 
 @media only screen and (max-width: 76.1875em) {
 	html .md-nav--primary .md-nav__title--site {
@@ -53,27 +54,27 @@ body {
 }
 
 .md-typeset a, md-nav__link, md-nav__link:hover {
-	color: $link_color;
+	color: $accent;
 }
 
 a footnote-ref::before {
-	border-color: $link_color;
+	border-color: $accent;
 }
 
 a footnote-ref::before {
-	color: $link_color;
+	color: $accent;
 }
 
 .md-nav__item--active>.md-nav__link, .md-nav__link:active {
-	color: $link_color;
+	color: $accent;
 }
 
 .md-nav--secondary {
-	border-left: .4rem solid $header_background;
+	border-left: .4rem solid $accent;
 } 
 
 .md-nav__link:focus, .md-nav__link:hover {
-	color: $link_color;
+	color: $accent;
 }
 
 .md-typeset hr {
@@ -100,17 +101,17 @@ a footnote-ref::before {
     transition-duration: 0.25s, 0.25s;
     transition-timing-function: ease, ease;
     transition-delay: 0s, 0s;
-    color: #FF7A04; //Copy button was not properly visible, adjusted color
+    color: $accent; //Copy button was not properly visible, adjusted color
     content: "\E14D";
 }
 
 .md-clipboard__message {
-    color: #FF7A04; //Toolip text was not properly visible, adjusted color 
+    color: $accent; //Toolip text was not properly visible, adjusted color 
     background: rgba(0, 0, 0, .7);
 }
 
 .md-typeset .md-content__icon {
-    color: #FF7A04; //Changed color of the edit page icon
+    color: $accent; //Changed color of the edit page icon
 }
 
 .md-typeset .superfences-tabs {

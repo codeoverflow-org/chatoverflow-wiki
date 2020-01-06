@@ -29,6 +29,11 @@ jobs:
         with:
           source: docs/stylesheets/custom-header.scss
           destination: docs/stylesheets/custom-header.css
+      - name: Build fonts.css
+        uses: gha-utilities/sass-build@v0.1.0
+        with:
+          source: docs/stylesheets/fonts.scss
+          destination: docs/stylesheets/fonts.css
       - name: 'Fix links'
         run: bash .scripts/fix-links.sh
       - name: Build docs
