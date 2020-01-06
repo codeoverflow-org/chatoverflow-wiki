@@ -31,3 +31,8 @@ Here is a list of the most important ones including links to the documentation s
 * [SuperFences from PyMdown Extensions](https://facelessuser.github.io/pymdown-extensions/extensions/superfences/) - Allows nesting of code blocks. Also allows to highlight lines in code blocks and to create code blocks with multiple tabs for multiple languages.
 
 If you know other extensions/plugins that could improve the wiki let us know so we can add them or add them to the mkdocs.yml and the requirements.txt yourself and create a pull request.
+
+### Copyrigth Notices
+The following 3rd Party software is included in this repo:
+* [kdocs-material-dark-theme](https://github.com/fmaida/mkdocs-material-dark-theme) by @fmaida
+* [Roboto Font](https://github.com/google/roboto) by @google, licensed under [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0)
