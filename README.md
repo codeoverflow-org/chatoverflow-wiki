@@ -32,7 +32,7 @@ Here is a list of the most important ones including links to the documentation s
 
 If you know other extensions/plugins that could improve the wiki let us know so we can add them or add them to the mkdocs.yml and the requirements.txt yourself and create a pull request.
 
-### Copyrigth Notices
+## Copyrigth Notices
 The following 3rd Party software is included in this repo:
 * [kdocs-material-dark-theme](https://github.com/fmaida/mkdocs-material-dark-theme) by @fmaida
 * [Roboto Font](https://github.com/google/roboto) by @google, licensed under [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0)
