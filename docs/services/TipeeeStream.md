@@ -23,7 +23,7 @@ Click on `Show`, copy the entire key, add it as a credentials value with the key
 ## Plugin development with TipeeeStream Event Input
 This simple example plugin logs all Subscriptions:
 
-For more information have a look at the [javadoc](http://docs.codeoverflow.org/chatoverflow-api/org/codeoverflow/chatoverflow/api/io/input/event/TipeeestreamEventInput.html), the TipeeeStream event input is capable of all the following events:
+For more information have a look at the [javadoc](https://docs.codeoverflow.org/code/chatoverflow-api/org/codeoverflow/chatoverflow/api/io/input/event/TipeeestreamEventInput.html), the TipeeeStream event input is capable of all the following events:
 
 - Follows
 - Subscriptions

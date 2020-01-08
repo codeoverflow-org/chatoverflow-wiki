@@ -11,7 +11,7 @@ The file service doesn't require any credentials.
 ## Plugin development with File Input
 Have a look at this simple example plugin that loads files from the data folder:
 
-For more information have a look at the [javadoc](http://docs.codeoverflow.org/chatoverflow-api/org/codeoverflow/chatoverflow/api/io/input/FileInput.html).
+For more information have a look at the [javadoc](https://docs.codeoverflow.org/code/chatoverflow-api/org/codeoverflow/chatoverflow/api/io/input/FileInput.html).
 
 !!! example
     
@@ -77,7 +77,7 @@ For more information have a look at the [javadoc](http://docs.codeoverflow.org/c
 ## Plugin development with File Output
 Have a look at this simple example plugin that saves files and creates or deletes directories in the data folder.
 
-For more information have a look at the [javadoc](http://docs.codeoverflow.org/chatoverflow-api/org/codeoverflow/chatoverflow/api/io/output/FileOutput.html).
+For more information have a look at the [javadoc](https://docs.codeoverflow.org/code/chatoverflow-api/org/codeoverflow/chatoverflow/api/io/output/FileOutput.html).
 
 !!! example
     

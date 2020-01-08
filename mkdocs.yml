@@ -2,7 +2,7 @@ site_name: ChatOverflow Wiki
 site_author: codeoverflow.org
 copyright: '© 2019 codeoverflow.org CC-BY-SA-4.0'
 
-site_url: http://docs.codeoverflow.org/
+site_url: https://docs.codeoverflow.org/
 repo_name: codeoverflow-org/chatoverflow
 repo_url: https://github.com/codeoverflow-org/chatoverflow/
 edit_uri: https://github.com/codeoverflow-org/chatoverflow-wiki/edit/master/docs/

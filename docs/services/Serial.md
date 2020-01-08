@@ -40,7 +40,7 @@ Default value is `9600`.
 ## Plugin development with Serial Input
 Have a look at this simple example plugin that prints incoming data to log:
 
-For more information have a look at the [javadoc](http://docs.codeoverflow.org/chatoverflow-api/org/codeoverflow/chatoverflow/api/io/input/SerialInput.html).
+For more information have a look at the [javadoc](https://docs.codeoverflow.org/code/chatoverflow-api/org/codeoverflow/chatoverflow/api/io/input/SerialInput.html).
 
 !!! example
     
@@ -90,7 +90,7 @@ For more information have a look at the [javadoc](http://docs.codeoverflow.org/c
 ## Plugin development with Serial Output
 Have a look at this simple example plugin that sends `ping` to the connected device
 
-For more information have a look at the [javadoc](http://docs.codeoverflow.org/chatoverflow-api/org/codeoverflow/chatoverflow/api/io/output/SerialOutput.html).
+For more information have a look at the [javadoc](https://docs.codeoverflow.org/code/chatoverflow-api/org/codeoverflow/chatoverflow/api/io/output/SerialOutput.html).
 
 !!! example
     
