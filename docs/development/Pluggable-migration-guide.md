@@ -21,7 +21,7 @@ Here are the required steps to make your plugin compatible with the new format:
                 <minor>0</minor>
             </api>
             <version>0.3.0</version>
-            <website>http://codeoverflow.org</website>
+            <website>https://codeoverflow.org</website>
             <sourceRepo>https://github.com/codeoverflow-org/chatoverflow-plugins</sourceRepo>
             <bugtracker>https://github.com/codeoverflow-org/chatoverflow/issues</bugtracker>
             <license>EPL-2.0</license>

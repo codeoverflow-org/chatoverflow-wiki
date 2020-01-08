@@ -201,7 +201,7 @@ For more information have a look at the [javadoc](https://docs.codeoverflow.org/
             DiscordEmbed embed = DiscordEmbed.Builder()
                 .withColor("#FF7A04")
                 .withTitle(timeMessage)
-                .withAuthor("codeoverflow.org", "http://codeoverflow.org", "https://avatars3.githubusercontent.com/u/34384464?s=200&v=4")
+                .withAuthor("codeoverflow.org", "https://codeoverflow.org", "https://avatars3.githubusercontent.com/u/34384464?s=200&v=4")
                 .withTimestamp(OffsetDateTime.now())
                 .build();
             
