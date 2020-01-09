@@ -66,7 +66,7 @@ Example: `true`, `false`
 ## URI parameter
 The URI parameter reqires you to enter an [Uniform Resource Identifier](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier), most comonly a link to a website.
 
-Example: `donate/to/team.txt`, `trees.html`, `org.jpg`, `https://www.codeoverflow.org/`
+Example: `donate/to/team.txt`, `trees.html`, `org.jpg`, `http://www.codeoverflow.org/`
 
 ??? example "Example for developers" 
 
