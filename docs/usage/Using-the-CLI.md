@@ -24,7 +24,7 @@ Usage: Chat Overflow [options]
                            set this flag to enable plugin log output on console
   -f, --enableLogFile      set this flag to enable logging to log files
 
-For more information, please visit https://codeoverflow.org/
+For more information, please visit http://codeoverflow.org/
 ```
 
 !!! bug
