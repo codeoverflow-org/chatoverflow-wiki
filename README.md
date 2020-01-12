@@ -35,4 +35,4 @@ If you know other extensions/plugins that could improve the wiki let us know so 
 ## Copyright Notices
 The following 3rd party software is included in this repo:
 * [kdocs-material-dark-theme](https://github.com/fmaida/mkdocs-material-dark-theme) by @fmaida
-* [Roboto Font](https://github.com/google/roboto) by @google, licensed under [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0)
+* [Roboto Font](https://github.com/google/roboto) by @google, licensed under [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0)

@@ -22,7 +22,7 @@ It is defined somewhere in your servers configuration (different for each game, 
 ## Plugin development with RCON Output
 Have a look at this simple plugin that says hello to all players on a minecraft server using rcon:
 
-For more information have a look at the [javadoc](http://docs.codeoverflow.org/chatoverflow-api/org/codeoverflow/chatoverflow/api/io/input/RconOutput.html).
+For more information have a look at the [javadoc](https://docs.codeoverflow.org/code/chatoverflow-api/org/codeoverflow/chatoverflow/api/io/input/RconOutput.html).
 
 !!! example
     
@@ -62,7 +62,7 @@ For more information have a look at the [javadoc](http://docs.codeoverflow.org/c
 ## Plugin development with RCON Input
 If you want to also get the response of a command have a look at this simple plugin:
 
-For more information have a look at the [javadoc](http://docs.codeoverflow.org/chatoverflow-api/org/codeoverflow/chatoverflow/api/io/input/RconInput.html).
+For more information have a look at the [javadoc](https://docs.codeoverflow.org/code/chatoverflow-api/org/codeoverflow/chatoverflow/api/io/input/RconInput.html).
 
 !!! example
     

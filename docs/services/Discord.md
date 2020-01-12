@@ -43,7 +43,7 @@ Now you only need to copy the link, follow it, login and add the bot!
 ## Plugin development with Discord Chat Input
 Have a look at this simple example plugin that uses an event handler to log all messages and displays the amount of messages every 5 seconds. It also logs if messages are edited, deleted and reactions are added.
 
-For more information have a look at the [javadoc](http://docs.codeoverflow.org/chatoverflow-api/org/codeoverflow/chatoverflow/api/io/input/chat/DiscordChatInput.html).
+For more information have a look at the [javadoc](https://docs.codeoverflow.org/code/chatoverflow-api/org/codeoverflow/chatoverflow/api/io/input/chat/DiscordChatInput.html).
 
 !!! example
     
@@ -151,7 +151,7 @@ For more information have a look at the [javadoc](http://docs.codeoverflow.org/c
 ## Plugin development with Discord Chat Output
 Have a look at this simple example plugin that posts the current time to the chat every minute.
 
-For more information have a look at the [javadoc](http://docs.codeoverflow.org/chatoverflow-api/org/codeoverflow/chatoverflow/api/io/output/chat/DiscordChatOutput.html).
+For more information have a look at the [javadoc](https://docs.codeoverflow.org/code/chatoverflow-api/org/codeoverflow/chatoverflow/api/io/output/chat/DiscordChatOutput.html).
 
 !!! example 
 

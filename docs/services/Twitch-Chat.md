@@ -19,7 +19,7 @@ _Note: Copy the entire key **including** the `oauth:` at the beginning._
 ## Plugin development with Twitch Chat Input
 Have a look at this simple example plugin that uses an event handler to log all messages and displays the amount of messages every 5 seconds:
 
-For more information have a look at the [javadoc](http://docs.codeoverflow.org/chatoverflow-api/org/codeoverflow/chatoverflow/api/io/input/chat/TwitchChatInput.html).
+For more information have a look at the [javadoc](https://docs.codeoverflow.org/code/chatoverflow-api/org/codeoverflow/chatoverflow/api/io/input/chat/TwitchChatInput.html).
 
 !!! example
     
@@ -85,7 +85,7 @@ For more information have a look at the [javadoc](http://docs.codeoverflow.org/c
 ## Plugin development with Twitch Chat Output
 Have a look at this simple example plugin that posts the current time to the chat every minute.
 
-For more information have a look at the [javadoc](http://docs.codeoverflow.org/chatoverflow-api/org/codeoverflow/chatoverflow/api/io/output/chat/TwitchChatOutput.html).
+For more information have a look at the [javadoc](https://docs.codeoverflow.org/code/chatoverflow-api/org/codeoverflow/chatoverflow/api/io/output/chat/TwitchChatOutput.html).
 
 !!! example
     

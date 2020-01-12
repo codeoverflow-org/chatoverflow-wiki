@@ -25,7 +25,7 @@ For other event types just use the appropriate register method of the input. The
 - Raids
 - Hosts
 
-For more information have a look at the [javadoc](http://docs.codeoverflow.org/chatoverflow-api/org/codeoverflow/chatoverflow/api/io/input/event/StreamElementsEventInput.html).
+For more information have a look at the [javadoc](https://docs.codeoverflow.org/code/chatoverflow-api/org/codeoverflow/chatoverflow/api/io/input/event/StreamElementsEventInput.html).
 
 !!! example
     
