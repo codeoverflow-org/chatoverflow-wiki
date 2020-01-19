@@ -8,7 +8,7 @@ To authenticate add a file at `~/.sbt/1.0/gpr-codeoverflow.sbt` with the followi
 
 ```scala
 credentials += Credentials(
-  "GitHub Package Registry",
+  "CodeOverflow GitHub Package Registry",
   "maven.pkg.github.com",
   "<GITHUB_USERNAME>",
   "<GITHUB_TOKEN>"    
@@ -19,8 +19,8 @@ Replace `<GITHUB_USERNAME>` with your user name and `<GITHUB_TOKEN>` with a pers
 
 ## Publishing
 
-To publish a component first check that the version in the `build.sbt` of the project you want to publish contains the correct version number. Also if you want to publish it to a fork for e.g. testing purposes you need to change the `githubOwner` variable in the `publish.sbt` of the project accordingly.
+To publish a component first check that the version in the `build.sbt` of the project you want to publish contains the correct version number. If you want to publish it to a fork e.g. for testing purposes you can overwrite the default user, which is the CodeOverflow org, with your user name using the `GITHUB_OWNER` environment variable.
 
-After you done that and have authenticated as mentioned in the section above you can just run `sbt apiProject/publish`. Replace the name of the project accordingly. 
+After you did that and have authenticated as mentioned in the section above you can just run `sbt apiProject/publish`. Replace the name of the project accordingly. 
 
 *DO NOT* try to run `sbt publish`, it will try to publish all projects including plugins and the launcher, which don't have publishing set up. These projects let the task fail and sbt will abort all non finished publish processes, which may result in half published projects.
