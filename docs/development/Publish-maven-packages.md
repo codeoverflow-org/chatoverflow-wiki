@@ -8,7 +8,7 @@ To authenticate add a file at `~/.sbt/1.0/gpr-codeoverflow.sbt` with the followi
 
 ```scala
 credentials += Credentials(
-  "CodeOverflow GitHub Package Registry",
+  "GitHub Package Registry",
   "maven.pkg.github.com",
   "<GITHUB_USERNAME>",
   "<GITHUB_TOKEN>"    
