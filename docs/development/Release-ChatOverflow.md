@@ -46,7 +46,7 @@ With the two deployed versions of Chat Overflow, we are now ready to release!
 
 10. Within about 5 minutes a GitHub action should automatically build and upload a end-user and plugin developer deployment. Check that it is working successfully in the actions tab of the main repository. If it fails create deployments manually as detailed in the [deploy article](/docs/development/Deploy-ChatOverflow.md) and open an issue so it gets fixed till the next release.
 
-    Also within about 5 minutes the API should be published to GitHub Package Registry by an action. If it fails refer to the [publish maven packages](/docs/development/Publish-maven-packages.md), do it manually and also open an issue so it gets fixed till the next release.
+    Also within about 5 minutes the API, GUI and Framework should be published to GitHub Package Registry by an action. If it fails refer to the [publish maven packages](/docs/development/Publish-maven-packages.md), do it manually and also open an issue so it gets fixed till the next release.
 
 ## 3. Post-Release
 
