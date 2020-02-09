@@ -27,10 +27,6 @@ Usage: Chat Overflow [options]
 For more information, please visit http://codeoverflow.org/
 ```
 
-!!! bug
-    **Currently there is a bug that prevents custom web server ports from working properly.**
-    **See [#149](https://github.com/codeoverflow-org/chatoverflow/issues/149).**
-
 ## Configuration
 
 You can also configure the paths of config- and credentials-files to create custom setups:
